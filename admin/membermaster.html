@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="favicon.ico">
+<title>会員マスター | 会員管理 | EC-CUBE管理画面</title>
+
+<!-- Bootstrap core CSS -->
+<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="assets/css/dashboard.css" rel="stylesheet">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-target="#scrollspy" data-spy="scroll">
+<div id="wrapper"> 
+    <!-- ▼ #header ▼ -->
+    <header id="header" role="navigation">
+        <div class="navbar navbar-static-top">
+            <div class="logo" href="./"><img src="assets/img/logo.png" width="172"></div>
+            <!-- Sidebar toggle button-->
+            <div class="bt_toggle"> <a role="button" data-toggle="offcanvas" class="bt_drawermenu" href="#"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> </div>
+            <a href="#" id="sitename">EC-CUBE STORE ミンナデイッショニイーシーキューブ<span class="fa fa-external-link"></span></a> 
+            <!-- Navbar Right Menu -->
+            <div class="navbar-menu">
+                <dl class="dropdown">
+                    <dt class="dropdown-toggle" data-toggle="dropdown"><span class="fa-stack fa-lg"> <span class="fa fa-circle fa-stack-2x"></span> <span class="fa fa-user fa-stack-1x fa-inverse"></span> </span> <span class="hidden-xs">管理者 様</span><span class="fa fa-chevron-down icon_down"></span></dt>
+                    <dd class="dropdown-menu">最終ログイン<br>
+                    2014/11/29 15:01 <a class="btn btn-info btn-xs" href="#">ログアウト</a> </dd>
+                </dl>
+            </div>
+        </div>
+    </header>
+    <!-- ▲ #header ▲ --> 
+    <!-- ▼ #side ▼ -->
+    <aside id="side">
+        <ul class="nav nav-sidebar">
+            <li><a href="./"><span class="fa fa-home"></span>ホーム<span class="fa fa-chevron-down"></span></a></li>
+            <li><a class="toggle"><span class="fa fa-tag"></span>商品管理<span class="fa fa-chevron-down"></span></a>
+                <ul>
+                    <li><a href="#">基本情報設定</a></li>
+                    <li><a href="#">デザイン設定</a></li>
+                    <li><a href="#">システム設定</a></li>
+                    <li><a href="#">機能拡張</a></li>
+                    <li><a href="#">環境情報</a></li>
+                </ul>
+            </li>
+            <li><a class="toggle"><span class="fa fa-shopping-cart"></span>受注管理<span class="fa fa-chevron-down"></span></a>
+                <ul>
+                    <li><a href="#">基本情報設定</a></li>
+                    <li><a href="#">デザイン設定</a></li>
+                    <li><a href="#">システム設定</a></li>
+                    <li><a href="#">機能拡張</a></li>
+                    <li><a href="#">環境情報</a></li>
+                </ul>
+            </li>
+            <li><a class="toggle"><span class="fa fa-bar-chart"></span>売上管理<span class="fa fa-chevron-down"></span></a>
+                <ul>
+                    <li><a href="#">基本情報設定</a></li>
+                    <li><a href="#">デザイン設定</a></li>
+                    <li><a href="#">システム設定</a></li>
+                    <li><a href="#">機能拡張</a></li>
+                    <li><a href="#">環境情報</a></li>
+                </ul>
+            </li>
+            <li class="active"><a class="toggle"><span class="fa fa-users"></span>会員管理<span class="fa fa-chevron-down"></span></a>
+                <ul style="display: block;">
+                    <li><a href="#">基本情報設定</a></li>
+                    <li><a href="#">デザイン設定</a></li>
+                    <li><a href="#">システム設定</a></li>
+                    <li><a href="#">機能拡張</a></li>
+                    <li><a href="#">環境情報</a></li>
+                </ul>
+            </li>
+            <li><a class="toggle"><span class="fa fa-file-text-o"></span>コンテンツ管理<span class="fa fa-chevron-down"></span></a>
+                <ul>
+                    <li><a href="#">基本情報設定</a></li>
+                    <li><a href="#">デザイン設定</a></li>
+                    <li><a href="#">システム設定</a></li>
+                    <li><a href="#">機能拡張</a></li>
+                    <li><a href="#">環境情報</a></li>
+                </ul>
+            </li>
+            <li><a class="toggle"><span class="fa fa-cog"></span>設定<span class="fa fa-chevron-down"></span></a>
+                <ul>
+                    <li><a class="toggle">基本情報設定<span class="fa fa-chevron-down"></span></a>
+                        <ul>
+                            <li><a href="#">基本情報設定</a></li>
+                            <li><a href="#">デザイン設定</a></li>
+                            <li><a href="#">システム設定</a></li>
+                            <li><a href="#">機能拡張</a></li>
+                            <li><a href="#">環境情報</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">デザイン設定</a></li>
+                    <li><a href="#">システム設定</a></li>
+                    <li><a href="#">機能拡張</a></li>
+                    <li><a href="#">環境情報</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+    <!-- ▲ #side ▲ --> 
+    <!-- ▼ #main ▼ -->
+    <div id="main">
+        <h1 class="page-header">会員管理<span>会員マスター</span></h1>
+        <div class="container-fluid">
+            <div class="search-box">
+                <form>
+                    <div class="row">
+                        <div class="col-md-12 accordion">
+                            <input class="form-control input_search" type="text" placeholder="商品名・ID・コード">
+                            <a class="toggle fa-stack" href="#"><span class="fa fa-minus fa-stack-1x"></span> <span class="fa fa-minus fa-stack-1x"></span></a>
+                            <div class="search-box-inner accpanel">
+                                <div class="row">
+                                    <div class="col-sm-3 col-md-2 col-md-offset-2">
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                                <option>option 2</option>
+                                                <option>option 3</option>
+                                                <option>option 4</option>
+                                                <option>option 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-2">
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                                <option>option 2</option>
+                                                <option>option 3</option>
+                                                <option>option 4</option>
+                                                <option>option 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-2">
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                                <option>option 2</option>
+                                                <option>option 3</option>
+                                                <option>option 4</option>
+                                                <option>option 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-2">
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                                <option>option 2</option>
+                                                <option>option 3</option>
+                                                <option>option 4</option>
+                                                <option>option 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.row -->
+                                
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4 col-md-offset-2">
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                                <option>option 2</option>
+                                                <option>option 3</option>
+                                                <option>option 4</option>
+                                                <option>option 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group has-error">
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                                <option>option 2</option>
+                                                <option>option 3</option>
+                                                <option>option 4</option>
+                                                <option>option 5</option>
+                                            </select>
+                                            <p class="errormsg text-danger">通常価格が入力されていません。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.row -->
+                                
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4 col-md-offset-2">
+                                        <div class="form-group lange">
+                                            <label>購入金額</label>
+                                            <input class="form-control" type="text">
+                                            ～
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group lange has-error">
+                                            <label>購入回数</label>
+                                            <input class="form-control" type="text">
+                                            ～
+                                            <input class="form-control" type="text">
+                                            <p class="errormsg text-danger">通常価格が入力されていません。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.row --> 
+                                
+                            </div>
+                        </div>
+                        <!-- /.col --> 
+                    </div>
+                    <div class="row btn_area">
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 text-center">
+                            <button class="btn btn-primary btn-block btn-lg">検索する <span class="fa fa-chevron-right"></span></button>
+                        </div>
+                        <!-- /.col --> 
+                    </div>
+                </form>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box">
+                        <div class="box-header with-arrow">
+                            <h3 class="box-title">検索結果 <span class="normal"><strong>120件</strong> が該当しました</span></h3>
+                        </div><!-- /.box-header -->
+                        <div class="box-body no-padding">
+                        	<div class="row">
+                            	<div class="col-md-6">
+                                	<ul class="link-with-bar">
+                                	<li><a>すべて</a></li>
+                                    <li><a href="#">公開</a></li>
+                                    <li><a href="#">非公開</a></li>
+                                    <li><a href="#">在庫なし</a></li>
+                                    </ul>
+                                </div>
+                            	<div class="col-md-6">
+                                	<ul class="sort-dd">
+                                    <li class="dropdown">
+                                    	<a class="dropdown-toggle" data-toggle="dropdown">20件<span class="fa fa-chevron-down icon_down"></span></a>
+                                        <ul class="dropdown-menu">
+                                        	<li><a>50件</a></li>
+                                            <li><a>100件</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                    	<a class="dropdown-toggle" data-toggle="dropdown">CSVダウンロード<span class="fa fa-chevron-down icon_down"></span></a>
+                                        <ul class="dropdown-menu">
+                                        	<li><a>ダウンロード</a></li>
+                                            <li><a>出力項目設定</a></li>
+                                        </ul>
+                                    </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="table_list">
+                                <div class="table-responsive with-border">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>会員ID</th>
+                                                <th>会員名</th>
+                                                <th>電話番号</th>
+                                                <th>メールアドレス</th>
+                                                <th>&nbsp;</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="member_id">1,001</td>
+                                                <td class="member_name"><a href="#">CUBE 太郎</a></td>
+                                                <td class="member_tel">000-0000-0000</td>
+                                                <td class="member_mail">guest@example.com</td>
+                                                <td class="icon_edit">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a>規格</a></li>
+                                                        <li><a>確認</a></li>
+                                                        <li><a>複製</a></li>
+                                                        <li><a>削除</a></li>
+                                                        </ul>
+                                                    </div>                                        
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1,002</td>
+                                                <td><a href="#">CUBE 太郎</a></td>
+                                                <td>000-0000-0000</td>
+                                                <td>guest@example.com</td>
+                                                <td class="icon_edit">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a>規格</a></li>
+                                                        <li><a>確認</a></li>
+                                                        <li><a>複製</a></li>
+                                                        <li><a>削除</a></li>
+                                                        </ul>
+                                                    </div>                                        
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1,003</td>
+                                                <td><a href="#">CUBE 太郎</a></td>
+                                                <td>000-0000-0000</td>
+                                                <td>guest@example.com</td>
+                                                <td class="icon_edit">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a>規格</a></li>
+                                                        <li><a>確認</a></li>
+                                                        <li><a>複製</a></li>
+                                                        <li><a>削除</a></li>
+                                                        </ul>
+                                                    </div>                                        
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1,003</td>
+                                                <td><a href="#">CUBE 太郎</a></td>
+                                                <td>000-0000-0000</td>
+                                                <td>guest@example.com</td>
+                                                <td class="icon_edit">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a>規格</a></li>
+                                                        <li><a>確認</a></li>
+                                                        <li><a>複製</a></li>
+                                                        <li><a>削除</a></li>
+                                                        </ul>
+                                                    </div>                                        
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1,004</td>
+                                                <td><a href="#">CUBE 太郎</a></td>
+                                                <td>000-0000-0000</td>
+                                                <td>guest@example.com</td>
+                                                <td class="icon_edit">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a>規格</a></li>
+                                                        <li><a>確認</a></li>
+                                                        <li><a>複製</a></li>
+                                                        <li><a>削除</a></li>
+                                                        </ul>
+                                                    </div>                                        
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1,005</td>
+                                                <td><a href="#">CUBE 太郎</a></td>
+                                                <td>000-0000-0000</td>
+                                                <td>guest@example.com</td>
+                                                <td class="icon_edit">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a>規格</a></li>
+                                                        <li><a>確認</a></li>
+                                                        <li><a>複製</a></li>
+                                                        <li><a>削除</a></li>
+                                                        </ul>
+                                                    </div>                                        
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1,006</td>
+                                                <td><a href="#">CUBE 太郎</a></td>
+                                                <td>000-0000-0000</td>
+                                                <td>guest@example.com</td>
+                                                <td class="icon_edit">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a>規格</a></li>
+                                                        <li><a>確認</a></li>
+                                                        <li><a>複製</a></li>
+                                                        <li><a>削除</a></li>
+                                                        </ul>
+                                                    </div>                                        
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1,007</td>
+                                                <td><a href="#">CUBE 太郎</a></td>
+                                                <td>000-0000-0000</td>
+                                                <td>guest@example.com</td>
+                                                <td class="icon_edit">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a>規格</a></li>
+                                                        <li><a>確認</a></li>
+                                                        <li><a>複製</a></li>
+                                                        <li><a>削除</a></li>
+                                                        </ul>
+                                                    </div>                                        
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1,008</td>
+                                                <td><a href="#">CUBE 太郎</a></td>
+                                                <td>000-0000-0000</td>
+                                                <td>guest@example.com</td>
+                                                <td class="icon_edit">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a>規格</a></li>
+                                                        <li><a>確認</a></li>
+                                                        <li><a>複製</a></li>
+                                                        <li><a>削除</a></li>
+                                                        </ul>
+                                                    </div>                                        
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1,009</td>
+                                                <td><a href="#">CUBE 太郎</a></td>
+                                                <td>000-0000-0000</td>
+                                                <td>guest@example.com</td>
+                                                <td class="icon_edit">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a>規格</a></li>
+                                                        <li><a>確認</a></li>
+                                                        <li><a>複製</a></li>
+                                                        <li><a>削除</a></li>
+                                                        </ul>
+                                                    </div>                                        
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1,010</td>
+                                                <td><a href="#">CUBE 太郎</a></td>
+                                                <td>000-0000-0000</td>
+                                                <td>guest@example.com</td>
+                                                <td class="icon_edit">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a>規格</a></li>
+                                                        <li><a>確認</a></li>
+                                                        <li><a>複製</a></li>
+                                                        <li><a>削除</a></li>
+                                                        </ul>
+                                                    </div>                                        
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1,011</td>
+                                                <td><a href="#">CUBE 太郎</a></td>
+                                                <td>000-0000-0000</td>
+                                                <td>guest@example.com</td>
+                                                <td class="icon_edit">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a>規格</a></li>
+                                                        <li><a>確認</a></li>
+                                                        <li><a>複製</a></li>
+                                                        <li><a>削除</a></li>
+                                                        </ul>
+                                                    </div>                                        
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1,012</td>
+                                                <td><a href="#">CUBE 太郎</a></td>
+                                                <td>000-0000-0000</td>
+                                                <td>guest@example.com</td>
+                                                <td class="icon_edit">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a>規格</a></li>
+                                                        <li><a>確認</a></li>
+                                                        <li><a>複製</a></li>
+                                                        <li><a>削除</a></li>
+                                                        </ul>
+                                                    </div>                                        
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1,013</td>
+                                                <td><a href="#">CUBE 太郎</a></td>
+                                                <td>000-0000-0000</td>
+                                                <td>guest@example.com</td>
+                                                <td class="icon_edit">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a>規格</a></li>
+                                                        <li><a>確認</a></li>
+                                                        <li><a>複製</a></li>
+                                                        <li><a>削除</a></li>
+                                                        </ul>
+                                                    </div>                                        
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1,014</td>
+                                                <td><a href="#">CUBE 太郎</a></td>
+                                                <td>000-0000-0000</td>
+                                                <td>guest@example.com</td>
+                                                <td class="icon_edit">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a>規格</a></li>
+                                                        <li><a>確認</a></li>
+                                                        <li><a>複製</a></li>
+                                                        <li><a>削除</a></li>
+                                                        </ul>
+                                                    </div>                                        
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1,015</td>
+                                                <td><a href="#">CUBE 太郎</a></td>
+                                                <td>000-0000-0000</td>
+                                                <td>guest@example.com</td>
+                                                <td class="icon_edit">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a>規格</a></li>
+                                                        <li><a>確認</a></li>
+                                                        <li><a>複製</a></li>
+                                                        <li><a>削除</a></li>
+                                                        </ul>
+                                                    </div>                                        
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body --> 
+                        <div class="box-footer">
+                        	<div class="text-center">
+                                <ul class="pagination">
+                                    <li><a href="#">&lt;</a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">&gt;</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- /.box --> 
+                </div><!-- /.col --> 
+            </div>
+        </div>
+    </div>
+    <!-- ▲ #main ▲ --> 
+    
+    <!-- ▼ #footer ▼ --> 
+    <footer id="footer">
+        <small class="copyright">Copyright &copy; 2000-2015 <a href="http://www.ec-cube.net">EC-CUBE</a>. All rights reserved.</small>
+    </footer>
+    <!-- ▲ #footer ▲ --> 
+</div>
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script src="dist/js/bootstrap.min.js"></script> 
+<script src="assets/js/function.js"></script>
+</body>
+</html>
