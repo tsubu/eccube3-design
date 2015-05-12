@@ -19,6 +19,7 @@ $(function(){
 		event.preventDefault();
 		toggleCart();
 		$('#wrapper').removeClass('drawer-open');
+		
 	});
 
 	//close lateral menu on mobile 
@@ -83,8 +84,8 @@ $(function(){
 		var position = destination.offset().top;
 		$("html,body").animate({scrollTop:position}, speed, 'swing');
 		return false;
-	});
-	
+	});	
+		
 	// dropdownの中をクリックしても閉じないようにする
 	$(".dropdown-menu").click(function(e) {
 		e.stopPropagation();
@@ -113,6 +114,7 @@ $(function() {
 
 
 
+
 /**
 * jquery.matchHeight-min.js v0.6.0
 * http://brm.io/jquery-match-height/
@@ -132,6 +134,10 @@ $(function() {
 		property: 'height'
 	});
 	$('.item_name').matchHeight({
+		byRow: true,
+		property: 'height'
+	});
+	$('button.thumbnail').matchHeight({
 		byRow: true,
 		property: 'height'
 	});

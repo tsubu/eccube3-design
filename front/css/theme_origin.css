@@ -228,21 +228,15 @@ body {
 .slick-dots {
     position: absolute;
     bottom: -45px;
-
     display: block;
-
     width: 100%;
     padding: 0;
-
     list-style: none;
-
     text-align: center;
 }
 .slick-dots li {
     position: relative;
-
     display: inline-block;
-
     width: 20px;
     height: 20px;
     margin: 0 5px;
@@ -253,15 +247,11 @@ body {
 .slick-dots li button {
     font-size: 0;
     line-height: 0;
-
     display: block;
-
     width: 20px;
     height: 20px;
     padding: 5px;
-
     cursor: pointer;
-
     color: transparent;
     border: 0;
     outline: none;
@@ -278,16 +268,12 @@ body {
 .slick-dots li button:before {
 	content:" ";
     line-height: 20px;
-
     position: absolute;
     top: 0;
     left: 0;
-
     width: 12px;
     height: 12px;
-
     text-align: center;
-
     opacity: .25;
     background-color: black;
 	border-radius: 50%;
@@ -298,6 +284,16 @@ body {
     background-color: black;
 }
 
+.slick-dots li button.thumbnail img {
+	width: 0; height: 0;
+}
+
+#item_photo_area .slick-slide {
+	text-align: center;
+}
+#item_photo_area .slick-slide img {
+	display: inline-block;
+}
 
 
 /******************************
@@ -422,5 +418,43 @@ body {
 
 	.txt_bnr {
 		margin:0 0 16px;
+	}
+	
+	/* -------------------------------- 
+		Detail Page
+	-------------------------------- */
+	
+	#item_photo_area .slick-dots {
+		margin: 0 -16px;
+		position: relative;
+		bottom: 0;
+	}
+	#item_photo_area .slick-dots::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	#item_photo_area .slick-dots li {
+		width: 33.33333333%; height: auto;
+		padding: 16px;
+		margin: 0;
+		float: left;
+	}
+
+	.slick-dots li button.thumbnail {
+		width: 100%; height: auto;
+		padding: 0;
+	}
+	.slick-dots li button.thumbnail img {
+		width: 100%; height: auto;
+		opacity: 0.8;
+	}
+	.slick-dots li button.thumbnail:hover img,
+	.slick-dots li.slick-active button.thumbnail img {
+		opacity: 1;
+	}
+	.slick-dots li button.thumbnail::before {
+		display: none;
 	}
 }
