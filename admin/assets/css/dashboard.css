@@ -1773,6 +1773,9 @@ dl.accordion {
 .search-box .toggle.active span:last-child {
     transform: rotate(0deg);
 }
+.search-box .search-box-inner label {
+	font-size: 86%;
+}
 
 
 /* link-with-bar */
