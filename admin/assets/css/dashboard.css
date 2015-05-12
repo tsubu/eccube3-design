@@ -1101,6 +1101,9 @@ dd.form-group .errormsg {
 	padding-bottom: 0;
 	padding-right: 60px;
 }
+.item_box .item_photo img {
+	max-width: 100px;
+}
 .item_box .icon_edit {
 	position: absolute;
 	top: 8px; right: 16px;
