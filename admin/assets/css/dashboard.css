@@ -1590,7 +1590,8 @@ dl.accordion {
 #side li.active ul li a {
 	background: #2F3F4E;
 }
-#side li.active ul li a:hover {
+#side li.active ul li a:hover,
+#side li.active ul li.active a{
 	background: #3F5467;
 }
 
