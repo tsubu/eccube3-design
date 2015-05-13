@@ -93,15 +93,15 @@ $(function(){
 	});
 	
 	/////////// 追従サイドバー
-	
+		
 	// スクロールした時に以下の処理        
 	$(window).on("scroll", function() {
 		//PC表示の時のみに適用
-		if(window.innerWidth > 767){		
+		if (window.innerWidth > 767){		
 			var	side = $("#confirm_side"),
 				wrap = $("#shopping_confirm"),
 				min_move = wrap.offset().top,
-				max_move = wrap.offset().top + wrap.height() - side.height() - 2*parseInt(side.css("top") ),
+				max_move = min_move + wrap.height() - side.height() - 2*parseInt(side.css("top") ),
 				margin_bottom = max_move - min_move;
 			 
 				var scrollTop =  $(window).scrollTop();
@@ -116,8 +116,13 @@ $(function(){
 			}
 		return false;
 	});
+	
+	
+	
+	
 		
 });
+
 
 /////////// ロールオーバー
 $.fn.rollover = function() {

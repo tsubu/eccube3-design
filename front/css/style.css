@@ -3829,6 +3829,10 @@ div.table .tbody .addr_box .column {
 		font-size: 3.2rem;
 	}
 	
+	#confirm_side {
+		top: 0;
+	}
+	
 	/* MyPage
 	------------------------------------------- */
 	.local_nav li {

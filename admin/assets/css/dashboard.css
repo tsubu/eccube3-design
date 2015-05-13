@@ -1888,7 +1888,9 @@ ul.link-with-bar li:last-child::after {
 	margin-top: 16px;
 }
 
-
+#aside_column {
+	top: 0;
+}
 
 /*	Footer
 ============================ */
