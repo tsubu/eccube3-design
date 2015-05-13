@@ -119,27 +119,37 @@
     <div id="main">
         <h1 class="page-header">受注管理<span>受注登録</span></h1>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row" id="aside_wrap">
                 <div class="col-md-9">
                     <div class="box accordion">
                         <div class="box-header toggle active">
                             <h3 class="box-title">注文者情報<span class="fa fa-chevron-down icon_down"></span></h3>
                         </div><!-- /.box-header -->
                         <div class="box-body accpanel" style="display: block;">
-                        	<form role="form">
-                                <dl class="dl-horizontal">
-                                	<dt>会員ID</dt>
-                                    <dd>1</dd>
-                                    <dt>お名前</dt>
-                                    <dd class="form-group input_name"><input class="form-control" type="text" placeholder="姓"><input class="form-control" type="text" placeholder="名"></dd>
-                                    <dt>お名前(カナ)</dt>
-                                    <dd class="form-group input_name"><input class="form-control" type="text" placeholder="セイ"><input class="form-control" type="text" placeholder="メイ"></dd>
-                                    <dt>住所</dt>
-                                    <dd>
-                                        <div class="form-inline form-group input_zip">〒<input class="form-control" type="text">-<input class="form-control" type="text"><button class="btn btn-default btn-sm" type="submit">自動入力</button></div>
-                                    </dd>
-                                    <dd>
-                                    	<div class="form-group form-inline">
+                        	<form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-3 col-lg-2">会員ID</div>
+                                    <div class="col-sm-9 col-lg-10">1</div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2" for="name1">お名前</label>
+                                    <div class="col-sm-9 col-lg-10 input_name form-inline">
+                                        <input class="form-control" type="text" placeholder="姓" id="name1"><input class="form-control" type="text" placeholder="名">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2" for="name2">お名前(カナ)</label>
+                                    <div class="col-sm-9 col-lg-10 input_name form-inline">
+                                        <input class="form-control" type="text" placeholder="セイ" id="name2"><input class="form-control" type="text" placeholder="メイ">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2" for="address1">住所</label>
+                                    <div class="col-sm-9 col-lg-10 input_zip form-inline">〒<input class="form-control" type="text">-<input class="form-control" type="text"><button class="btn btn-default btn-sm" type="submit">自動入力</button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-3 col-sm-9 col-lg-offset-2 col-lg-10 form-inline">
                                             <select class="form-control">
                                                 <option selected="selected">都道府県を選択</option>
                                                 <option>option 1</option>
@@ -148,26 +158,37 @@
                                                 <option>option 4</option>
                                                 <option>option 5</option>
                                             </select>
-                                    	</div>
-                                    </dd>
-                                    <dd class="form-group"><input class="form-control" type="text" placeholder="市区町村名（例：千代田区神田神保町）"></dd>
-                                    <dd class="form-group"><input class="form-control" type="text" placeholder="番地・ビル名（例：1-3-5）"></dd>
-                                    <dt>メールアドレス</dt>
-                                    <dd class="form-group"><input class="form-control" type="email">
-                                    </dd>
-                                    <dt>電話番号</dt>
-                                    <dd>
-                                        <div class="form-inline form-group input_tel"><input class="form-control" type="tel">-<input class="form-control" type="tel">-<input class="form-control" type="tel"></div>
-                                    </dd>
-                                    <dt>FAX番号</dt>
-                                    <dd>
-                                        <div class="form-inline form-group input_tel"><input class="form-control" type="tel">-<input class="form-control" type="tel">-<input class="form-control" type="tel"></div>
-                                    </dd>
-                                    <dt>備考</dt>
-                                    <dd class="form-group"><textarea class="form-control" placeholder="Enter ..." rows="3"></textarea>
-                                    </dd>
-                                </dl>
-                            </form>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-3 col-sm-9 col-lg-offset-2 col-lg-10">
+                                        <input class="form-control" type="text" id="address1" placeholder="市区町村名（例：千代田区神田神保町）">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-3 col-sm-9 col-lg-offset-2 col-lg-10">
+                                        <input class="form-control" type="text" placeholder="番地・ビル名（例：1-3-5）">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2" for="email">メールアドレス</label>
+                                    <div class="col-sm-9 col-lg-10"><input class="form-control" type="email" id="email"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2" for="tel">電話番号</label>
+                                    <div class="col-sm-9 col-lg-10 input_tel form-inline"><input class="form-control" type="tel" id="tel">-<input class="form-control" type="tel">-<input class="form-control" type="tel"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2" for="fax">FAX番号</label>
+                                    <div class="col-sm-9 col-lg-10 input_tel form-inline"><input class="form-control" type="tel" id="fax">-<input class="form-control" type="tel">-<input class="form-control" type="tel"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2" for="other">備考</label>
+                                    <div class="col-sm-9 col-lg-10"><textarea class="form-control" placeholder="Enter ..." rows="3" id="other"></textarea></div>
+                                </div>
+                                
+                                </form>
+
                         </div><!-- /.box-body --> 
                     </div><!-- /.box -->
                     
@@ -391,7 +412,7 @@
                                 </div>
                                 <form role="form">
                                     <dl class="dl-horizontal with-border2">
-                                        <dt>お名前</dt>
+                                        <dt>※このフォームはdl-horizontalを使用しているので参考にしないでください</dt>
                                         <dd class="form-group input_name"><input class="form-control" type="text" placeholder="姓"><input class="form-control" type="text" placeholder="名"></dd>
                                         <dt>お名前(カナ)</dt>
                                         <dd class="form-group input_name"><input class="form-control" type="text" placeholder="セイ"><input class="form-control" type="text" placeholder="メイ"></dd>
@@ -460,8 +481,8 @@
                     
                 </div><!-- /.col -->
                 
-                <div class="col-md-3">
-                	<div class="col_inner" id="aside_column">
+                <div class="col-md-3" id="aside_column">
+                	<div class="col_inner">
                         <div class="box no-header">
                             <div class="box-body">
 

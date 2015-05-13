@@ -983,37 +983,37 @@ dd.form-group .errormsg {
     padding: 10px 16px;
 }
 
-.box .dl-horizontal dt {
+.box .form-horizontal dt {
 	text-align: left;
 	font-weight: normal;
 	margin-bottom: 10px;
 }
-.box .dl-horizontal dd {
+.box .form-horizontal dd {
 	margin-bottom: 16px;
 }
-.box .dl-horizontal dd .form-group {
+.box .form-horizontal dd .form-group {
 	margin-bottom: 0;
 }
-.box .dl-horizontal .accordion .toggle,
-.box .dl-horizontal .text_link {
+.box .form-horizontal .accordion .toggle,
+.box .form-horizontal .text_link {
 	display: block;
 	padding: 5px 0;
 }
-.dl-horizontal .photo_files {
+.form-horizontal .photo_files {
 	cursor: pointer;
 	border-radius:3px;
 	border: 1px solid #C4CCCE;
 	padding: 16px 16px 0 0;
 	text-align: center;
 }
-.dl-horizontal .photo_files li {
+.form-horizontal .photo_files li {
 	width: 150px;
 	float: left;
 	margin-left: 16px;
 	margin-bottom: 16px;
 	position: relative;
 }
-.dl-horizontal .photo_files li a {
+.form-horizontal .photo_files li a {
 	display: block;
 	font-size: 24px;
 	width: 40px; height: 40px;
@@ -1026,10 +1026,10 @@ dd.form-group .errormsg {
 	text-align: center;
 	vertical-align: middle;
 }
-.dl-horizontal .photo_files li a:hover {
+.form-horizontal .photo_files li a:hover {
 	color: #cdcdcd;
 }
-.dl-horizontal .photo_files li img {
+.form-horizontal .photo_files li img {
 	max-width: 100%;
 }
 
@@ -1840,20 +1840,20 @@ ul.link-with-bar li:last-child::after {
 	width: 30%;
 	max-width: 5em;
 }
-.form-group.input_tel input:first-child {
+.form-group .input_tel input:first-child {
 	margin-left: 0;
 }
-.form-group.input_name input {
+.form-group .input_name input {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 2%;
 	margin-bottom: 0;
 	width: 49%;
 }
-.form-group.input_name input:first-child {
+.form-group .input_name input:first-child {
 	margin-left: 0;
 }
-.form-group.input_zip input {
+.form-group .input_zip input {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 1%;
@@ -1872,6 +1872,10 @@ ul.link-with-bar li:last-child::after {
 }
 .item_detail .item_subtotal span.small {
 	margin-right: 16px;
+}
+
+.form-horizontal .radio, .form-horizontal .checkbox, .form-horizontal .radio-inline, .form-horizontal .checkbox-inline {
+    padding-top: 0;
 }
 
 

@@ -119,44 +119,59 @@
     <div id="main">
         <h1 class="page-header">商品管理<span>商品登録</span></h1>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row" id="aside_wrap">
                 <div class="col-md-9">
                     <div class="box">
                         <div class="box-header">
                             <h3 class="box-title">基本情報</h3>
                         </div><!-- /.box-header -->
                         <div class="box-body">
-                        	<form role="form">
-                                <dl class="dl-horizontal">
-                                    <dt>商品名</dt>
-                                    <dd class="form-group"><input class="form-control" type="text" placeholder="Enter ..."></dd>
-                                    <dt>商品種別</dt>
-                                    <dd class="form-group has-error">
+                        	<form role="form" class="form-horizontal">
+                            
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2" for="product_name">商品名</label>
+                                    <div class="col-sm-9 col-lg-10">
+                                        <input class="form-control" type="text" placeholder="Enter ..." id="product_name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2" for="product_type_id">商品種別</label>
+                                    <div class="col-sm-9 col-lg-10 has-error">
                                         <div class="radio"><label class="radio-inline"><input type="radio" checked="checked" value="1" name="product_type_id">通常商品</label><label class="radio-inline"><input type="radio" value="2" name="product_type_id">ダウンロード商品</label>
-									<p class="errormsg text-danger">入力されていません</p></div>
-</dd>
-                                    <dt>商品画像</dt>
-                                    <dd>
+                                            <p class="errormsg text-danger">入力されていません</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2" for="product_image">商品画像</label>
+                                    <div class="col-sm-9 col-lg-10">
                                     	<div id="drag-drop-area">
                                         	<div class="drag-drop-inside">
                                                 <span class="fa fa-picture-o fa-4x"></span>
                                             </div>
                                         </div>
-                                    </dd>
-                                    <dd><a class="with-icon"><span class="fa fa-plus"></span>ファイルをアップロード</a></dd>
-                                    <dt>商品説明</dt>
-                                    <dd class="form-group"><textarea class="form-control" placeholder="Enter ..." rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2"><a class="with-icon"><span class="fa fa-plus"></span>ファイルをアップロード</a></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2" for="product_detail">商品説明</label>
+                                    <div class="col-sm-9 col-lg-10">
+                                    	<textarea id="product_detail" class="form-control" placeholder="Enter ..." rows="3"></textarea>
                                         <div class="accordion"><a class="toggle with-icon"><span class="fa fa-plus icon_plus"></span>一覧コメントを追加</a>
                                             <div class="accpanel form-group has-error">
                                                 <textarea class="form-control" placeholder="Enter ..." rows="3"></textarea>
                                                 <p class="errormsg text-danger">入力されていません</p>
                                             </div>
                                         </div>
-                                    </dd>
-                                    <dt>販売価格（円）</dt>
-                                    <dd>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2" for="product_sale_price">販売価格（円）</label>
+                                    <div class="col-sm-9 col-lg-10">
                                         <div class="row">
-                                            <div class="col-xs-6 form-group">
+                                            <div class="col-xs-6">
                                                 <input class="form-control" type="text" placeholder="Enter ...">
                                                 <div class="accordion"><a class="toggle with-icon"><span class="fa fa-plus icon_plus"></span>通常価格を追加</a>
                                                     <div class="accpanel">
@@ -166,18 +181,26 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </dd>
-                                    <dt>在庫数</dt>
-                                    <dd>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2" for="product_quantity">在庫数</label>
+                                    <div class="col-sm-9 col-lg-10">
                                         <div class="row">
-                                            <div class="col-xs-12 form-group form-inline">
+                                            <div class="col-xs-12 form-inline">
                                             <input class="form-control" type="text" disabled="disabled" placeholder="Enter ..."> <div class="checkbox"><label> <input type="checkbox">無制限</label></div>
                                             </div>
                                         </div>
-                                    </dd>
-                                    <dt>商品カテゴリ</dt>
-                                    <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
-                                </dl>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2" for="product_quantity">商品カテゴリ</label>
+                                    <div class="col-sm-9 col-lg-10">
+                                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus
+                                    </div>
+                                </div>
+
+                            
                             </form>
                         </div><!-- /.box-body --> 
                     </div><!-- /.box -->
@@ -212,8 +235,8 @@
                     
                 </div><!-- /.col -->
                 
-                <div class="col-md-3">
-                	<div class="col_inner" id="aside_column">
+                <div class="col-md-3" id="aside_column">
+                	<div class="col_inner">
                         <div class="box no-header">
                             <div class="box-body">
                                 <div class="row">
