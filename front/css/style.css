@@ -759,6 +759,9 @@ fieldset[disabled] .btn-link:focus {
 label {
     font-weight: normal;
 }
+input[type="number"] {
+	text-align: right;
+}
 .form-group .errormsg {
 	margin-top: 3px;
 	font-size: 12px;
