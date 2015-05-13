@@ -1,6 +1,7 @@
 $(function(){	
 	
-	// Drawer menu
+	/////////// Drawer menu
+	
 	$('.nav-trigger').on('click', function(event){
 		event.preventDefault();
 		if( $('.drawer-open #drawer').size()==0){
@@ -51,7 +52,7 @@ $(function(){
 	}
 	
 
-	// category accordion
+	/////////// category accordion
 	$("#category li .toggle").on('click', function(){
 		var togglepanel = $(this).parent('a').next('ul');
 		if(togglepanel.css("display")=="none"){
@@ -64,7 +65,7 @@ $(function(){
 		return false;
 	});
 
-	// アコーディオン
+	/////////// アコーディオン
 	$(".accordion dl dt").on('click', function(){
 		if( $(this).parent('dl').children('dd').css('display') == 'none') {
 			$(this).addClass('active');
@@ -76,7 +77,7 @@ $(function(){
 		return false;
 	});
 
-	// スムーススクロール
+	/////////// スムーススクロール
 	$('a.anchor').on('click', function() {
 		var speed = 400;//スクロール速度 単位：ミリ秒
 		var href= $(this).attr("href");
@@ -86,14 +87,39 @@ $(function(){
 		return false;
 	});	
 		
-	// dropdownの中をクリックしても閉じないようにする
+	/////////// dropdownの中をクリックしても閉じないようにする
 	$(".dropdown-menu").click(function(e) {
 		e.stopPropagation();
 	});
 	
+	/////////// 追従サイドバー
+	
+	// スクロールした時に以下の処理        
+	$(window).on("scroll", function() {
+		//PC表示の時のみに適用
+		if(window.innerWidth > 767){		
+			var	side = $("#confirm_side"),
+				wrap = $("#shopping_confirm"),
+				min_move = wrap.offset().top,
+				max_move = wrap.offset().top + wrap.height() - side.height() - 2*parseInt(side.css("top") ),
+				margin_bottom = max_move - min_move;
+			 
+				var scrollTop =  $(window).scrollTop();
+				if( scrollTop > min_move && scrollTop < max_move ){
+					var margin_top = scrollTop - min_move ;
+					side.css({"margin-top": margin_top});
+				} else if( scrollTop < min_move ){
+					side.css({"margin-top":0});
+				}else if( scrollTop > max_move ){
+					side.css({"margin-top":margin_bottom});
+				}
+			}
+		return false;
+	});
+		
 });
 
-// ロールオーバー
+/////////// ロールオーバー
 $.fn.rollover = function() {
    return this.each(function() {
       var src = $(this).attr('src');
@@ -114,7 +140,7 @@ $(function() {
 
 
 
-
+/////////// 高さ揃え
 /**
 * jquery.matchHeight-min.js v0.6.0
 * http://brm.io/jquery-match-height/
