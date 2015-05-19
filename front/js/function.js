@@ -173,4 +173,6 @@ $(function() {
 		byRow: true,
 		property: 'height'
 	});
+	$('#login_box > div').matchHeight({
+	});
 });
