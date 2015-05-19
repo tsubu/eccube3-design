@@ -92,24 +92,30 @@ jQuery(document).ready(function($){
 	// スクロールした時に以下の処理        
 	$(window).on("scroll", function() {
 		//PC表示の時のみに適用
-		if (window.innerWidth > 993){		
-			var	side = $("#aside_column"),
-				wrap = $("#aside_wrap"),
-				heightH = $("#header").outerHeight(),
-				min_move = wrap.offset().top,
-				max_move = wrap.offset().top + wrap.height() - side.height() - 2*parseInt(side.css("top") ),
-				margin_bottom = max_move - min_move;
-			 
-				var scrollTop =  $(window).scrollTop();
-				if( scrollTop > min_move && scrollTop < max_move ){
-					var margin_top = scrollTop - min_move ;
-					side.css({"margin-top": margin_top + heightH + 10});
-				} else if( scrollTop < min_move ){
-					side.css({"margin-top":0});
-				}else if( scrollTop > max_move ){
-					side.css({"margin-top":margin_bottom});
-				}
+		if (window.innerWidth > 993){
+			
+			if ($('#shopping_confirm').length) {
+			
+				var	side = $("#aside_column"),
+					wrap = $("#aside_wrap"),
+					heightH = $("#header").outerHeight(),
+					min_move = wrap.offset().top,
+					max_move = wrap.offset().top + wrap.height() - side.height() - 2*parseInt(side.css("top") ),
+					margin_bottom = max_move - min_move;
+				 
+					var scrollTop =  $(window).scrollTop();
+					if( scrollTop > min_move && scrollTop < max_move ){
+						var margin_top = scrollTop - min_move ;
+						side.css({"margin-top": margin_top + heightH + 10});
+					} else if( scrollTop < min_move ){
+						side.css({"margin-top":0});
+					}else if( scrollTop > max_move ){
+						side.css({"margin-top":margin_bottom});
+					}
 			}
+			
+		}
+			
 		return false;
 	});
 

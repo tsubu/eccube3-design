@@ -97,29 +97,30 @@ $(function(){
 	// スクロールした時に以下の処理        
 	$(window).on("scroll", function() {
 		//PC表示の時のみに適用
-		if (window.innerWidth > 767){		
-			var	side = $("#confirm_side"),
-				wrap = $("#shopping_confirm"),
-				min_move = wrap.offset().top,
-				max_move = min_move + wrap.height() - side.height() - 2*parseInt(side.css("top") ),
-				margin_bottom = max_move - min_move;
-			 
-				var scrollTop =  $(window).scrollTop();
-				if( scrollTop > min_move && scrollTop < max_move ){
-					var margin_top = scrollTop - min_move ;
-					side.css({"margin-top": margin_top});
-				} else if( scrollTop < min_move ){
-					side.css({"margin-top":0});
-				}else if( scrollTop > max_move ){
-					side.css({"margin-top":margin_bottom});
-				}
-			}
+		if (window.innerWidth > 767){
+			
+			if ($('#shopping_confirm').length) {
+
+				var	side = $("#confirm_side"),
+					wrap = $("#shopping_confirm"),
+					min_move = wrap.offset().top,
+					max_move = min_move + wrap.height() - side.height() - 2*parseInt(side.css("top") ),
+					margin_bottom = max_move - min_move;
+				 
+					var scrollTop =  $(window).scrollTop();
+					if ( scrollTop > min_move && scrollTop < max_move ){
+						var margin_top = scrollTop - min_move ;
+						side.css({"margin-top": margin_top});
+					} else if ( scrollTop < min_move ){
+						side.css({"margin-top":0});
+					} else if ( scrollTop > max_move ){
+						side.css({"margin-top":margin_bottom});
+					}
+	
+			}			
+		}
 		return false;
 	});
-	
-	
-	
-	
 		
 });
 
