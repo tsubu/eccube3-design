@@ -1109,6 +1109,14 @@ dd.form-group .errormsg {
 	top: 8px; right: 16px;
 	text-align: right;
 }
+.item_box .item_detail textarea {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.no-header > .box-body .item_box:first-child {
+	border-top: 0 none;
+}
+
 .item_list table {
 	margin-bottom: 0;
 	border-top: 1px solid #d1d8d9;
@@ -1117,6 +1125,7 @@ dd.form-group .errormsg {
 	border-top: 1px solid #d1d8d9;
 	position: relative;
 }
+
 .order_list .item_box {
 	border-top: 1px dotted #d1d8d9;
 	position: relative;
@@ -1139,14 +1148,37 @@ dd.form-group .errormsg {
 	padding-top: 16px;
 }
 
+/* sortable_list */
+
+.sortable_list table {
+	margin-bottom: 0;
+	border-top: 1px solid #d1d8d9;
+}
+.sortable_list .item_box {
+	border-top: 1px solid #d1d8d9;
+	position: relative;
+	padding-left: 1em;
+}
+.sortable_list .icon_sortable {
+	position: absolute;
+	left: 0; top: 50%;
+	margin-top: -1.5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
 @media (min-width:768px) {
 	.item_box {
 		border: 0 none;
 		position: static;
 	}
 	.item_box > div {
+		padding: 16px;
 		vertical-align: middle;
 		border-top: 1px solid #d1d8d9;
+	}
+	.no-header > .box-body .item_box:first-child > div {
+		border-top: 0 none;
 	}
 	.order_list  .item_box > div {
 		border-top: 1px dotted #d1d8d9;
@@ -1167,7 +1199,19 @@ dd.form-group .errormsg {
 		margin-top: 8px;
 		margin-right: 16px;
 	}
+
+	/* sortable_list */
 	
+	.sortable_list .item_box {
+		padding-left: 16px;
+	}
+	.sortable_list .icon_sortable {
+		display: table-cell;
+		position: inherit;
+		vertical-align: middle;
+		margin-top: 0;
+	}
+
 }
 
 
