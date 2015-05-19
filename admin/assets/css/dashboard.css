@@ -84,6 +84,9 @@ small, .small {
     padding-left: 16px !important;
     padding-right: 16px !important;
 }
+.no-border {
+	border: 0 none !important;
+}
 
 
 /* grid setting
@@ -1152,7 +1155,6 @@ dd.form-group .errormsg {
 
 .sortable_list table {
 	margin-bottom: 0;
-	border-top: 1px solid #d1d8d9;
 }
 .sortable_list .item_box {
 	border-top: 1px solid #d1d8d9;
@@ -1165,6 +1167,18 @@ dd.form-group .errormsg {
 	margin-top: -1.5em;
 	padding-top: 1em;
 	padding-bottom: 1em;
+}
+.sortable_list .number_sort {
+	white-space: nowrap;
+	text-align: right;
+}
+.sortable_list .number_sort .form-group {
+	margin: 0;
+}
+.sortable_list .number_sort input[type="number"] {
+	width: 7em;
+	margin-right: 5px;
+	text-align: right;
 }
 
 @media (min-width:768px) {
@@ -1326,6 +1340,34 @@ dl.accordion {
 	color: #BFBFBF;
 	font-size: 16px;
 	font-size: 1.6rem;
+	margin-right: 5px;
+}
+
+
+/* tree */
+
+.tree a {
+	color: #444;
+}
+.tree .active a {
+	font-weight: bold;
+}
+.tree > p {
+	margin: 0 0 8px;
+}
+.tree ul {
+	margin-left: 1.2em;
+}
+.tree > ul {
+	margin-left: 0;
+}
+.tree li a {
+	display: inline-block;
+	margin: 0 0 8px;
+}
+.tree ul li span.fa {
+	display: inline-block;
+	color: #d0d0d0;
 	margin-right: 5px;
 }
 

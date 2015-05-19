@@ -7,7 +7,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="icon" href="favicon.ico">
-<title>おすすめ商品管理 | コンテンツ管理 | EC-CUBE管理画面</title>
+<title>商品並び替え | 商品管理 | EC-CUBE管理画面</title>
 
 <!-- Bootstrap core CSS -->
 <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -50,12 +50,12 @@
     <aside id="side">
         <ul class="nav nav-sidebar">
             <li><a href="./"><span class="fa fa-home"></span>ホーム<span class="fa fa-chevron-down"></span></a></li>
-            <li><a class="toggle"><span class="fa fa-tag"></span>商品管理<span class="fa fa-chevron-down"></span></a>
-                <ul>
+            <li><a class="toggle active"><span class="fa fa-tag"></span>商品管理<span class="fa fa-chevron-down"></span></a>
+                <ul style="display: block">
                     <li><a href="item.html">商品登録1</a></li>
                     <li><a href="item_confirm.html">商品登録2</a></li>
                     <li><a href="itemmaster.html">商品マスター</a></li>
-                    <li><a href="item_sort.html">商品並び替え</a></li>
+                    <li class="active"><a href="item_sort.html">商品並び替え</a></li>
                     <li><a href="#">(仮)環境情報</a></li>
                 </ul>
             </li>
@@ -86,9 +86,9 @@
                     <li><a href="#">(仮)環境情報</a></li>
                 </ul>
             </li>
-            <li><a class="toggle active"><span class="fa fa-file-text-o"></span>コンテンツ管理<span class="fa fa-chevron-down"></span></a>
-                <ul style="display: block">
-                    <li class="active"><a href="contents_recommend.html">おすすめ商品管理</a></li>
+            <li><a class="toggle"><span class="fa fa-file-text-o"></span>コンテンツ管理<span class="fa fa-chevron-down"></span></a>
+                <ul>
+                    <li><a href="contents_recommend.html">おすすめ商品管理</a></li>
                     <li><a href="#">(仮)デザイン設定</a></li>
                     <li><a href="#">(仮)システム設定</a></li>
                     <li><a href="#">(仮)機能拡張</a></li>
@@ -117,16 +117,16 @@
     <!-- ▲ #side ▲ --> 
     <!-- ▼ #main ▼ -->
     <div id="main">
-        <h1 class="page-header">コンテンツ管理<span>おすすめ商品管理</span></h1>
+        <h1 class="page-header">商品管理<span>商品並び替え</span></h1>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- ▼ データが無い時 ▼
-                    <div class="data-empty"><span class="fa fa-inbox fa-3x"></span><p>データはありません</p></div>
-                     ▲ データが無い時 ▲ -->
-                    <!-- ▼ データがある時 ▼ -->
-                    <div class="box no-header">
-                        <div class="box-body no-padding">
+            
+            <div class="row" id="aside_wrap">
+                <div class="col-md-9">
+                    <div class="box">
+                        <div class="box-header">
+                            <h3 class="box-title">インテリア <span class="normal"><strong>120件</strong></span></h3>
+                        </div><!-- /.box-header -->
+                        <div class="box-body no-padding no-border">
                             <div class="sortable_list">
                                 <div class="tableish">
                                     
@@ -137,26 +137,14 @@
                                         </div>
                                         <div class="item_detail td">
                                         	<a href="#">おもしろセット（新年バージョン）</a><br>
-                                            <span class="small">味：抹茶 / 大きさ：M</span>
-                                            <div class="row">
-                                                <div class="col-xs-11">
-                                                    <textarea class="form-control" rows="2" placeholder="コメント入力欄"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-11 col-md-3">
-                                                    <button class="btn btn-primary btn-block btn-sm">登録</button>
-                                                </div>
-                                            </div>
+                                            <span>ID:000001</span>
                                         </div>
-                                    	<div class="icon_edit td">
-                                            <div class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                <li><a>編集</a></li>
-                                                <li><a>削除</a></li>
-                                                </ul>
-                                            </div>                                        
+                                    	<div class="number_sort td form-inline">
+                                        	<div class="form-group">
+                                                <input type="number" min="1" class="form-control col-xs-3">
+                                            </div>
+                                                <button type="button" class="btn btn-default btn-sm">移動</button>
+                                       
                                         </div>
                                     </div><!-- /.item_box --> 
                                 
@@ -167,26 +155,14 @@
                                         </div>
                                         <div class="item_detail td">
                                         	<a href="#">おもしろセット（新年バージョン）</a><br>
-                                            <span class="small">味：抹茶 / 大きさ：M</span>
-                                            <div class="row">
-                                                <div class="col-xs-11">
-                                                    <textarea class="form-control" rows="2" placeholder="コメント入力欄"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-11 col-md-3">
-                                                    <button class="btn btn-primary btn-block btn-sm">登録</button>
-                                                </div>
-                                            </div>
+                                            <span>ID:000001</span>
                                         </div>
-                                    	<div class="icon_edit td">
-                                            <div class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                <li><a>編集</a></li>
-                                                <li><a>削除</a></li>
-                                                </ul>
-                                            </div>                                        
+                                    	<div class="number_sort td form-inline">
+                                        	<div class="form-group">
+                                                <input type="number" min="1" class="form-control col-xs-3">
+                                            </div>
+                                                <button type="button" class="btn btn-default btn-sm">移動</button>
+                                       
                                         </div>
                                     </div><!-- /.item_box --> 
                                     
@@ -197,26 +173,14 @@
                                         </div>
                                         <div class="item_detail td">
                                         	<a href="#">おもしろセット（新年バージョン）おもしろセット（新年バージョン）おもしろセット（新年バージョン）おもしろセット（新年バージョン）おもしろセット（新年バージョン）</a><br>
-                                            <span class="small">味：抹茶 / 大きさ：M</span>
-                                            <div class="row">
-                                                <div class="col-xs-11">
-                                                    <textarea class="form-control" rows="2" placeholder="コメント入力欄"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-11 col-md-3">
-                                                    <button class="btn btn-primary btn-block btn-sm">登録</button>
-                                                </div>
-                                            </div>
+                                            <span>ID:000001</span>
                                         </div>
-                                    	<div class="icon_edit td">
-                                            <div class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                <li><a>編集</a></li>
-                                                <li><a>削除</a></li>
-                                                </ul>
-                                            </div>                                        
+                                    	<div class="number_sort td form-inline">
+                                        	<div class="form-group">
+                                                <input type="number" min="1" class="form-control col-xs-3">
+                                            </div>
+                                                <button type="button" class="btn btn-default btn-sm">移動</button>
+                                       
                                         </div>
                                     </div><!-- /.item_box --> 
                                     
@@ -228,25 +192,14 @@
                                         <div class="item_detail td">
                                         	<a href="#">おもしろセット（新年バージョン）</a><br>
                                             <span class="small">味：抹茶 / 大きさ：M</span>
-                                            <div class="row">
-                                                <div class="col-xs-11">
-                                                    <textarea class="form-control" rows="2" placeholder="コメント入力欄"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-11 col-md-3">
-                                                    <button class="btn btn-primary btn-block btn-sm">登録</button>
-                                                </div>
-                                            </div>
+                                            <span>ID:000001</span>
                                         </div>
-                                    	<div class="icon_edit td">
-                                            <div class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                <li><a>編集</a></li>
-                                                <li><a>削除</a></li>
-                                                </ul>
-                                            </div>                                        
+                                    	<div class="number_sort td form-inline">
+                                        	<div class="form-group">
+                                                <input type="number" min="1" class="form-control col-xs-3">
+                                            </div>
+                                                <button type="button" class="btn btn-default btn-sm">移動</button>
+                                       
                                         </div>
                                     </div><!-- /.item_box --> 
                                     
@@ -257,26 +210,14 @@
                                         </div>
                                         <div class="item_detail td">
                                         	<a href="#">おもしろセット（新年バージョン）</a><br>
-                                            <span class="small">味：抹茶 / 大きさ：M</span>
-                                            <div class="row">
-                                                <div class="col-xs-11">
-                                                    <textarea class="form-control" rows="2" placeholder="コメント入力欄"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-11 col-md-3">
-                                                    <button class="btn btn-primary btn-block btn-sm">登録</button>
-                                                </div>
-                                            </div>
+                                            <span>ID:000001</span>
                                         </div>
-                                    	<div class="icon_edit td">
-                                            <div class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                <li><a>編集</a></li>
-                                                <li><a>削除</a></li>
-                                                </ul>
-                                            </div>                                        
+                                    	<div class="number_sort td form-inline">
+                                        	<div class="form-group">
+                                                <input type="number" min="1" class="form-control col-xs-3">
+                                            </div>
+                                                <button type="button" class="btn btn-default btn-sm">移動</button>
+                                       
                                         </div>
                                     </div><!-- /.item_box --> 
                                     
@@ -284,17 +225,59 @@
                                 </div>
                             </div>
                         </div><!-- /.box-body --> 
-                    </div><!-- /.box -->
-                    <!-- ▲ データがある時 ▲ -->
-
-                    <div class="row">
-                        <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 text-center btn_area">
-                        	<button class="btn btn-primary btn-block btn-lg">おすすめ商品を追加</button>
+                        <div class="box-footer">
+                        	<div class="text-center">
+                                <ul class="pagination">
+                                    <li><a href="#">&lt;</a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">&gt;</a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    
-                    
+                    </div><!-- /.box --> 
                 </div><!-- /.col --> 
+                
+                <div class="col-md-3" id="aside_column">
+                	<div class="col_inner">
+                        
+                        <div class="box no-header">
+                            <div class="box-body">
+                            	<div class="tree">
+                                    <p><a href="#">全カテゴリー</a></p>
+                                    <ul>
+                                    <li class="active"><a><span class="fa fa-plus-square-o"></span>新入荷</a></li>
+                                    <li><a href="#"><span class="fa fa-plus-square-o"></span>インテリア</a></li>
+                                    <li><a href="#"><span class="fa fa-plus-square-o"></span>キッチンツール</a>
+                                        <ul>
+                                        <li><a href="#"><span class="fa fa-minus-square-o"></span>鍋</a></li>
+                                        <li><a href="#"><span class="fa fa-minus-square-o"></span>調理器具</a></li>
+                                        <li><a href="#"><span class="fa fa-minus-square-o"></span>食器</a></li>
+                                        <li><a href="#"><span class="fa fa-minus-square-o"></span>保存容器</a></li>
+                                        <li><a href="#"><span class="fa fa-minus-square-o"></span>キッチン家電</a></li>
+                                        <li><a href="#"><span class="fa fa-plus-square-o"></span>キッチンツール</a>
+                                            <ul>
+                                            <li><a href="#"><span class="fa fa-minus-square-o"></span>鍋</a></li>
+                                            <li><a href="#"><span class="fa fa-minus-square-o"></span>調理器具</a></li>
+                                            <li><a href="#"><span class="fa fa-minus-square-o"></span>食器</a></li>
+                                            <li><a href="#"><span class="fa fa-minus-square-o"></span>保存容器</a></li>
+                                            <li><a href="#"><span class="fa fa-minus-square-o"></span>キッチン家電</a></li>
+                                            </ul>
+                                        </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><span class="fa fa-plus-square-o"></span>ファブリック</a></li>
+                                    <li><a href="#"><span class="fa fa-plus-square-o"></span>雑貨・小物</a></li>
+                                    <li><a href="#"><span class="fa fa-plus-square-o"></span>お買い得品</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- /.box -->
+                        
+                    </div>
+                </div><!-- /.col --> 
+                
             </div>
         </div>
     </div>
