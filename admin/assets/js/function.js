@@ -94,7 +94,7 @@ jQuery(document).ready(function($){
 		//PC表示の時のみに適用
 		if (window.innerWidth > 993){
 			
-			if ($('#shopping_confirm').length) {
+			if ($('#aside_wrap').length) {
 			
 				var	side = $("#aside_column"),
 					wrap = $("#aside_wrap"),
