@@ -2011,3 +2011,11 @@ ul.link-with-bar li:last-child::after {
 }
 
 
+.data-empty {
+	padding: 1.5em;
+	text-align: center;
+}
+.data-empty .fa {
+	color: #d0d0d0;
+	margin: 8px;
+}
