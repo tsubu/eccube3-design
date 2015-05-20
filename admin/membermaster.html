@@ -14,7 +14,6 @@
 
 <!-- Custom styles for this template -->
 <link href="assets/css/dashboard.css" rel="stylesheet">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 
@@ -32,12 +31,12 @@
         <div class="navbar navbar-static-top">
             <div class="logo" href="./"><img src="assets/img/logo.png" width="172"></div>
             <!-- Sidebar toggle button-->
-            <div class="bt_toggle"> <a role="button" data-toggle="offcanvas" class="bt_drawermenu" href="#"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> </div>
-            <a href="#" id="sitename">EC-CUBE STORE ミンナデイッショニイーシーキューブ<span class="fa fa-external-link"></span></a> 
+            <div class="bt_toggle"> <a role="button" data-toggle="offcanvas" class="bt_drawermenu" href="#"> <span class="sr-only">Toggle navigation</span> <svg class="cb cb-bars"> <use xlink:href="#cb-bars" /></svg></a> </div>
+            <a href="#" id="sitename">EC-CUBE STORE ミンナデイッショニイーシーキューブ<svg class="cb cb-external-link"> <use xlink:href="#cb-external-link" /></svg></a> 
             <!-- Navbar Right Menu -->
             <div class="navbar-menu">
                 <dl class="dropdown">
-                    <dt class="dropdown-toggle" data-toggle="dropdown"><span class="fa-stack fa-lg"> <span class="fa fa-circle fa-stack-2x"></span> <span class="fa fa-user fa-stack-1x fa-inverse"></span> </span> <span class="hidden-xs">管理者 様</span><span class="fa fa-chevron-down icon_down"></span></dt>
+                    <dt class="dropdown-toggle" data-toggle="dropdown"><svg class="cb cb-user-circle"> <use xlink:href="#cb-user-circle" /></svg> <span class="hidden-xs">管理者 様</span><svg class="cb cb-angle-down icon_down"> <use xlink:href="#cb-angle-down"></svg></dt>
                     <dd class="dropdown-menu">最終ログイン<br>
                     2014/11/29 15:01 <a class="btn btn-info btn-xs" href="#">ログアウト</a> </dd>
                 </dl>
@@ -48,8 +47,8 @@
     <!-- ▼ #side ▼ -->
     <aside id="side">
         <ul class="nav nav-sidebar">
-            <li><a href="./"><span class="fa fa-home"></span>ホーム<span class="fa fa-chevron-down"></span></a></li>
-            <li><a class="toggle"><span class="fa fa-tag"></span>商品管理<span class="fa fa-chevron-down"></span></a>
+            <li><a href="./"><svg class="cb cb-home"> <use xlink:href="#cb-home" /></svg>ホーム<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a></li>
+            <li><a class="toggle"><svg class="cb cb-tag"> <use xlink:href="#cb-tag" /></svg>商品管理<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
                 <ul>
                     <li><a href="item.html">商品登録1</a></li>
                     <li><a href="item_confirm.html">商品登録2</a></li>
@@ -58,7 +57,7 @@
                     <li class="active"><a href="item_pattern.html">規格管理</a></li>
                 </ul>
             </li>
-            <li><a class="toggle"><span class="fa fa-shopping-cart"></span>受注管理<span class="fa fa-chevron-down"></span></a>
+            <li><a class="toggle"><svg class="cb cb-shopping-cart"> <use xlink:href="#cb-shopping-cart" /></svg>受注管理<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
                 <ul>
                     <li><a href="order.html">受注登録</a></li>
                     <li><a href="#">(仮)デザイン設定</a></li>
@@ -67,7 +66,7 @@
                     <li><a href="#">(仮)環境情報</a></li>
                 </ul>
             </li>
-            <li><a class="toggle"><span class="fa fa-bar-chart"></span>売上管理<span class="fa fa-chevron-down"></span></a>
+            <li><a class="toggle"><svg class="cb cb-chart"> <use xlink:href="#cb-chart" /></svg>売上管理<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
                 <ul>
                     <li><a href="#">(仮)基本情報設定</a></li>
                     <li><a href="#">(仮)デザイン設定</a></li>
@@ -76,7 +75,7 @@
                     <li><a href="#">(仮)環境情報</a></li>
                 </ul>
             </li>
-            <li><a class="toggle active"><span class="fa fa-users"></span>会員管理<span class="fa fa-chevron-down"></span></a>
+            <li><a class="toggle active"><svg class="cb cb-users"> <use xlink:href="#cb-users" /></svg>会員管理<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
                 <ul style="display: block">
                     <li class="active"><a href="membermaster.html">会員マスター</a></li>
                     <li><a href="member_regist.html">会員登録</a></li>
@@ -85,7 +84,7 @@
                     <li><a href="#">(仮)環境情報</a></li>
                 </ul>
             </li>
-            <li><a class="toggle"><span class="fa fa-file-text-o"></span>コンテンツ管理<span class="fa fa-chevron-down"></span></a>
+            <li><a class="toggle"><svg class="cb cb-file-text"> <use xlink:href="#cb-file-text" /></svg>コンテンツ管理<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
                 <ul>
                     <li><a href="contents_recommend.html">おすすめ商品管理</a></li>
                     <li><a href="#">(仮)デザイン設定</a></li>
@@ -94,9 +93,9 @@
                     <li><a href="#">(仮)環境情報</a></li>
                 </ul>
             </li>
-            <li><a class="toggle"><span class="fa fa-cog"></span>設定<span class="fa fa-chevron-down"></span></a>
+            <li><a class="toggle"><svg class="cb cb-cog"> <use xlink:href="#cb-cog" /></svg>設定<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
                 <ul>
-                    <li><a class="toggle">基本情報設定<span class="fa fa-chevron-down"></span></a>
+                    <li><a class="toggle">基本情報設定<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
                         <ul>
                             <li><a href="#">(仮)基本情報設定</a></li>
                             <li><a href="#">(仮)デザイン設定</a></li>
@@ -123,7 +122,7 @@
                     <div class="row">
                         <div class="col-md-12 accordion">
                             <input class="form-control input_search" type="text" placeholder="商品名・ID・コード">
-                            <a class="toggle fa-stack" href="#"><span class="fa fa-minus fa-stack-1x"></span> <span class="fa fa-minus fa-stack-1x"></span></a>
+                            <a class="toggle" href="#"><svg class="cb cb-minus"> <use xlink:href="#cb-minus" /></svg> <svg class="cb cb-minus"> <use xlink:href="#cb-minus" /></svg></a>
                             <div class="search-box-inner accpanel">
                                 <div class="row">
                                     <div class="col-sm-3 col-md-2 col-md-offset-2">
@@ -234,7 +233,7 @@
                     </div>
                     <div class="row btn_area">
                         <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 text-center">
-                            <button class="btn btn-primary btn-block btn-lg">検索する <span class="fa fa-chevron-right"></span></button>
+                            <button class="btn btn-primary btn-block btn-lg">検索する <svg class="cb cb-angle-right"> <use xlink:href="#cb-angle-right" /></svg></button>
                         </div>
                         <!-- /.col --> 
                     </div>
@@ -260,14 +259,14 @@
                             	<div class="col-md-6">
                                 	<ul class="sort-dd">
                                     <li class="dropdown">
-                                    	<a class="dropdown-toggle" data-toggle="dropdown">20件<span class="fa fa-chevron-down icon_down"></span></a>
+                                    	<a class="dropdown-toggle" data-toggle="dropdown">20件<svg class="cb cb-angle-down icon_down"> <use xlink:href="#cb-angle-down" /></svg></a>
                                         <ul class="dropdown-menu">
                                         	<li><a>50件</a></li>
                                             <li><a>100件</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
-                                    	<a class="dropdown-toggle" data-toggle="dropdown">CSVダウンロード<span class="fa fa-chevron-down icon_down"></span></a>
+                                    	<a class="dropdown-toggle" data-toggle="dropdown">CSVダウンロード<svg class="cb cb-angle-down icon_down"> <use xlink:href="#cb-angle-down" /></svg></a>
                                         <ul class="dropdown-menu">
                                         	<li><a>ダウンロード</a></li>
                                             <li><a>出力項目設定</a></li>
@@ -296,7 +295,7 @@
                                                 <td class="member_mail">guest@example.com</td>
                                                 <td class="icon_edit">
                                                     <div class="dropdown">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><svg class="cb cb-ellipsis-h"> <use xlink:href="#cb-ellipsis-h" /></svg></a>
                                                         <ul class="dropdown-menu dropdown-menu-right">
                                                         <li><a>規格</a></li>
                                                         <li><a>確認</a></li>
@@ -313,7 +312,7 @@
                                                 <td>guest@example.com</td>
                                                 <td class="icon_edit">
                                                     <div class="dropdown">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><svg class="cb cb-ellipsis-h"> <use xlink:href="#cb-ellipsis-h" /></svg></a>
                                                         <ul class="dropdown-menu dropdown-menu-right">
                                                         <li><a>規格</a></li>
                                                         <li><a>確認</a></li>
@@ -330,7 +329,7 @@
                                                 <td>guest@example.com</td>
                                                 <td class="icon_edit">
                                                     <div class="dropdown">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><svg class="cb cb-ellipsis-h"> <use xlink:href="#cb-ellipsis-h" /></svg></a>
                                                         <ul class="dropdown-menu dropdown-menu-right">
                                                         <li><a>規格</a></li>
                                                         <li><a>確認</a></li>
@@ -347,7 +346,7 @@
                                                 <td>guest@example.com</td>
                                                 <td class="icon_edit">
                                                     <div class="dropdown">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><svg class="cb cb-ellipsis-h"> <use xlink:href="#cb-ellipsis-h" /></svg></a>
                                                         <ul class="dropdown-menu dropdown-menu-right">
                                                         <li><a>規格</a></li>
                                                         <li><a>確認</a></li>
@@ -364,7 +363,7 @@
                                                 <td>guest@example.com</td>
                                                 <td class="icon_edit">
                                                     <div class="dropdown">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><svg class="cb cb-ellipsis-h"> <use xlink:href="#cb-ellipsis-h" /></svg></a>
                                                         <ul class="dropdown-menu dropdown-menu-right">
                                                         <li><a>規格</a></li>
                                                         <li><a>確認</a></li>
@@ -381,7 +380,7 @@
                                                 <td>guest@example.com</td>
                                                 <td class="icon_edit">
                                                     <div class="dropdown">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><svg class="cb cb-ellipsis-h"> <use xlink:href="#cb-ellipsis-h" /></svg></a>
                                                         <ul class="dropdown-menu dropdown-menu-right">
                                                         <li><a>規格</a></li>
                                                         <li><a>確認</a></li>
@@ -398,7 +397,7 @@
                                                 <td>guest@example.com</td>
                                                 <td class="icon_edit">
                                                     <div class="dropdown">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><svg class="cb cb-ellipsis-h"> <use xlink:href="#cb-ellipsis-h" /></svg></a>
                                                         <ul class="dropdown-menu dropdown-menu-right">
                                                         <li><a>規格</a></li>
                                                         <li><a>確認</a></li>
@@ -415,7 +414,7 @@
                                                 <td>guest@example.com</td>
                                                 <td class="icon_edit">
                                                     <div class="dropdown">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><svg class="cb cb-ellipsis-h"> <use xlink:href="#cb-ellipsis-h" /></svg></a>
                                                         <ul class="dropdown-menu dropdown-menu-right">
                                                         <li><a>規格</a></li>
                                                         <li><a>確認</a></li>
@@ -432,7 +431,7 @@
                                                 <td>guest@example.com</td>
                                                 <td class="icon_edit">
                                                     <div class="dropdown">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><svg class="cb cb-ellipsis-h"> <use xlink:href="#cb-ellipsis-h" /></svg></a>
                                                         <ul class="dropdown-menu dropdown-menu-right">
                                                         <li><a>規格</a></li>
                                                         <li><a>確認</a></li>
@@ -449,7 +448,7 @@
                                                 <td>guest@example.com</td>
                                                 <td class="icon_edit">
                                                     <div class="dropdown">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><svg class="cb cb-ellipsis-h"> <use xlink:href="#cb-ellipsis-h" /></svg></a>
                                                         <ul class="dropdown-menu dropdown-menu-right">
                                                         <li><a>規格</a></li>
                                                         <li><a>確認</a></li>
@@ -466,7 +465,7 @@
                                                 <td>guest@example.com</td>
                                                 <td class="icon_edit">
                                                     <div class="dropdown">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><svg class="cb cb-ellipsis-h"> <use xlink:href="#cb-ellipsis-h" /></svg></a>
                                                         <ul class="dropdown-menu dropdown-menu-right">
                                                         <li><a>規格</a></li>
                                                         <li><a>確認</a></li>
@@ -483,7 +482,7 @@
                                                 <td>guest@example.com</td>
                                                 <td class="icon_edit">
                                                     <div class="dropdown">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><svg class="cb cb-ellipsis-h"> <use xlink:href="#cb-ellipsis-h" /></svg></a>
                                                         <ul class="dropdown-menu dropdown-menu-right">
                                                         <li><a>規格</a></li>
                                                         <li><a>確認</a></li>
@@ -500,7 +499,7 @@
                                                 <td>guest@example.com</td>
                                                 <td class="icon_edit">
                                                     <div class="dropdown">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><svg class="cb cb-ellipsis-h"> <use xlink:href="#cb-ellipsis-h" /></svg></a>
                                                         <ul class="dropdown-menu dropdown-menu-right">
                                                         <li><a>規格</a></li>
                                                         <li><a>確認</a></li>
@@ -517,7 +516,7 @@
                                                 <td>guest@example.com</td>
                                                 <td class="icon_edit">
                                                     <div class="dropdown">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><svg class="cb cb-ellipsis-h"> <use xlink:href="#cb-ellipsis-h" /></svg></a>
                                                         <ul class="dropdown-menu dropdown-menu-right">
                                                         <li><a>規格</a></li>
                                                         <li><a>確認</a></li>
@@ -534,7 +533,7 @@
                                                 <td>guest@example.com</td>
                                                 <td class="icon_edit">
                                                     <div class="dropdown">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><svg class="cb cb-ellipsis-h"> <use xlink:href="#cb-ellipsis-h" /></svg></a>
                                                         <ul class="dropdown-menu dropdown-menu-right">
                                                         <li><a>規格</a></li>
                                                         <li><a>確認</a></li>
@@ -551,7 +550,7 @@
                                                 <td>guest@example.com</td>
                                                 <td class="icon_edit">
                                                     <div class="dropdown">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-h"></span></a>
+                                                        <a class="dropdown-toggle" data-toggle="dropdown"><svg class="cb cb-ellipsis-h"> <use xlink:href="#cb-ellipsis-h" /></svg></a>
                                                         <ul class="dropdown-menu dropdown-menu-right">
                                                         <li><a>規格</a></li>
                                                         <li><a>確認</a></li>

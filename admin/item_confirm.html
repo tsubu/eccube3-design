@@ -14,7 +14,6 @@
 
 <!-- Custom styles for this template -->
 <link href="assets/css/dashboard.css" rel="stylesheet">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link href="dist/css/bootstrap3-wysihtml5.min.css" rel="stylesheet">
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
@@ -33,14 +32,14 @@
         <div class="navbar navbar-static-top">
             <div class="logo" href="./"><img src="assets/img/logo.png" width="172"></div>
             <!-- Sidebar toggle button-->
-            <div class="bt_toggle"> <a role="button" data-toggle="offcanvas" class="bt_drawermenu" href="#"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> </div>
-            <a href="#" id="sitename">EC-CUBE STORE ミンナデイッショニイーシーキューブ<span class="fa fa-external-link"></span></a> 
+            <div class="bt_toggle"> <a role="button" data-toggle="offcanvas" class="bt_drawermenu" href="#"> <span class="sr-only">Toggle navigation</span> <svg class="cb cb-bars"> <use xlink:href="#cb-bars" /></svg></a> </div>
+            <a href="#" id="sitename">EC-CUBE STORE ミンナデイッショニイーシーキューブ<svg class="cb cb-external-link"> <use xlink:href="#cb-external-link" /></svg></a> 
             <!-- Navbar Right Menu -->
             <div class="navbar-menu">
                 <dl class="dropdown">
-                    <dt class="dropdown-toggle" data-toggle="dropdown"><span class="fa-stack fa-lg"> <span class="fa fa-circle fa-stack-2x"></span> <span class="fa fa-user fa-stack-1x fa-inverse"></span> </span> <span class="hidden-xs">管理者 様</span><span class="fa fa-chevron-down icon_down"></span></dt>
-                    <dd class="dropdown-menu dropdown-menu-right">最終ログイン<br>
-                        2014/11/29 15:01 <a class="btn btn-info btn-xs" href="#">ログアウト</a> </dd>
+                    <dt class="dropdown-toggle" data-toggle="dropdown"><svg class="cb cb-user-circle"> <use xlink:href="#cb-user-circle" /></svg> <span class="hidden-xs">管理者 様</span><svg class="cb cb-angle-down icon_down"> <use xlink:href="#cb-angle-down"></svg></dt>
+                    <dd class="dropdown-menu">最終ログイン<br>
+                    2014/11/29 15:01 <a class="btn btn-info btn-xs" href="#">ログアウト</a> </dd>
                 </dl>
             </div>
         </div>
@@ -49,8 +48,8 @@
     <!-- ▼ #side ▼ -->
     <aside id="side">
         <ul class="nav nav-sidebar">
-            <li><a href="./"><span class="fa fa-home"></span>ホーム<span class="fa fa-chevron-down"></span></a></li>
-            <li><a class="toggle active"><span class="fa fa-tag"></span>商品管理<span class="fa fa-chevron-down"></span></a>
+            <li><a href="./"><svg class="cb cb-home"> <use xlink:href="#cb-home" /></svg>ホーム<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a></li>
+            <li class="active"><a class="toggle"><svg class="cb cb-tag"> <use xlink:href="#cb-tag" /></svg>商品管理<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
                 <ul style="display:block">
                     <li><a href="item.html">商品登録1</a></li>
                     <li class="active"><a href="item_confirm.html">商品登録2</a></li>
@@ -59,7 +58,7 @@
                     <li><a href="item_pattern.html">規格管理</a></li>
                 </ul>
             </li>
-            <li><a class="toggle"><span class="fa fa-shopping-cart"></span>受注管理<span class="fa fa-chevron-down"></span></a>
+            <li><a class="toggle"><svg class="cb cb-shopping-cart"> <use xlink:href="#cb-shopping-cart" /></svg>受注管理<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
                 <ul>
                     <li><a href="order.html">受注登録</a></li>
                     <li><a href="#">(仮)デザイン設定</a></li>
@@ -68,7 +67,7 @@
                     <li><a href="#">(仮)環境情報</a></li>
                 </ul>
             </li>
-            <li><a class="toggle"><span class="fa fa-bar-chart"></span>売上管理<span class="fa fa-chevron-down"></span></a>
+            <li><a class="toggle"><svg class="cb cb-chart"> <use xlink:href="#cb-chart" /></svg>売上管理<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
                 <ul>
                     <li><a href="#">(仮)基本情報設定</a></li>
                     <li><a href="#">(仮)デザイン設定</a></li>
@@ -77,7 +76,7 @@
                     <li><a href="#">(仮)環境情報</a></li>
                 </ul>
             </li>
-            <li><a class="toggle"><span class="fa fa-users"></span>会員管理<span class="fa fa-chevron-down"></span></a>
+            <li><a class="toggle"><svg class="cb cb-users"> <use xlink:href="#cb-users" /></svg>会員管理<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
                 <ul>
                     <li><a href="membermaster.html">会員マスター</a></li>
                     <li><a href="member_regist.html">会員登録</a></li>
@@ -86,7 +85,7 @@
                     <li><a href="#">(仮)環境情報</a></li>
                 </ul>
             </li>
-            <li><a class="toggle"><span class="fa fa-file-text-o"></span>コンテンツ管理<span class="fa fa-chevron-down"></span></a>
+            <li><a class="toggle"><svg class="cb cb-file-text"> <use xlink:href="#cb-file-text" /></svg>コンテンツ管理<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
                 <ul>
                     <li><a href="contents_recommend.html">おすすめ商品管理</a></li>
                     <li><a href="#">(仮)デザイン設定</a></li>
@@ -95,9 +94,9 @@
                     <li><a href="#">(仮)環境情報</a></li>
                 </ul>
             </li>
-            <li><a class="toggle"><span class="fa fa-cog"></span>設定<span class="fa fa-chevron-down"></span></a>
+            <li><a class="toggle"><svg class="cb cb-cog"> <use xlink:href="#cb-cog" /></svg>設定<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
                 <ul>
-                    <li><a class="toggle">基本情報設定<span class="fa fa-chevron-down"></span></a>
+                    <li><a class="toggle">基本情報設定<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
                         <ul>
                             <li><a href="#">(仮)基本情報設定</a></li>
                             <li><a href="#">(仮)デザイン設定</a></li>
@@ -121,8 +120,8 @@
         <div class="container-fluid">
         	<div class="row">
                 <div class="alert alert-info alert-dismissable">
-                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
-                <span class="fa fa-info-circle"></span> 商品登録が完了しました。 </div>
+                <button aria-hidden="true" data-dismiss="alert" class="close" type="button"><svg class="cb cb-close"> <use xlink:href="#cb-close" /></svg></button>
+                <svg class="cb cb-info-circle"> <use xlink:href="#cb-info-circle" /></svg> 商品登録が完了しました。 </div>
             </div>
         
             <div class="row" id="aside_wrap">
@@ -132,55 +131,75 @@
                             <h3 class="box-title">基本情報</h3>
                         </div><!-- /.box-header -->
                         <div class="box-body">
-                        	<form role="form">
-                                <dl class="dl-horizontal">
-                                    <dt>商品ID</dt>
-                                    <dd>009</dd>
-                                    <dt>商品名</dt>
-                                    <dd class="form-group"><input class="form-control" type="text" placeholder="Enter ..."></dd>
-                                    <dt>商品種別</dt>
-                                    <dd class="form-group">
+                        	<form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-3 col-lg-2">商品ID</div>
+                                    <div class="col-sm-9 col-lg-10">009</div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2" for="item_name">商品名</label>
+                                    <div class="col-sm-9 col-lg-10">
+                                        <input class="form-control" type="text" placeholder="Enter ...">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2" for="item_name">商品種別</label>
+                                    <div class="col-sm-9 col-lg-10">
                                         <div class="radio"><label class="radio-inline"><input type="radio" checked="checked" value="1" name="product_type_id">通常商品</label><label class="radio-inline"><input type="radio" value="2" name="product_type_id">ダウンロード商品</label></div>
-</dd>
-                                    <dd><div class="form-group form-inline">ファイル名　<input class="form-control" type="text" placeholder="Enter ..."></div>
-                                    <a class="text_link with-icon"><span class="fa fa-plus"></span>ダウンロード商品をアップロード</a>
-                                    <span class="small">登録可能拡張子：zip,lzh,jpg,jpeg,gif,png,mp3,pdf,csv</span></dd>
-
-                                    <dt>商品画像<br><span class="small">620px以上推奨</span></dt>
-                                    <dd>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-3 col-sm-9 col-lg-offset-2 col-lg-10 ">
+                                    	<div class="form-inline">ファイル名　<input class="form-control" type="text" placeholder="Enter ..."></div>
+<a class="text_link with-icon"><svg class="cb cb-plus"> <use xlink:href="#cb-plus" /></svg>ダウンロード商品をアップロード</a>
+                                    <span class="small">登録可能拡張子：zip,lzh,jpg,jpeg,gif,png,mp3,pdf,csv</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2" for="item_image">商品画像<br><span class="small">620px以上推奨</span></label>
+                                    <div class="col-sm-9 col-lg-10">
                                     	<div class="photo_files">
                                         <ul class="clearfix">
                                         <li>
                                         <img src="http://www.ec-cube.net/user_data/packages/default/img/banner/top_bnr_design_template2_13_3.jpg">
-                                        <a href="#"><span class="fa fa-trash"></span></a>
+                                        <a href="#"><svg class="cb cb-close"> <use xlink:href="#cb-close" /></svg></a>
                                         </li>
                                         <li>
                                         <img src="http://www.ec-cube.net/user_data/packages/default/img/banner/top_bnr_design_template2_13_3.jpg">
-                                        <a href="#"><span class="fa fa-trash"></span></a>
+                                        <a href="#"><svg class="cb cb-close"> <use xlink:href="#cb-close" /></svg></a>
                                         </li>
                                         <li>
                                         <img src="http://www.ec-cube.net/user_data/packages/default/img/banner/top_bnr_design_template2_13_3.jpg">
-                                        <a href="#"><span class="fa fa-trash"></span></a>
+                                        <a href="#"><svg class="cb cb-close"> <use xlink:href="#cb-close" /></svg></a>
                                         </li>
                                         </ul>
                                         </div>
-                                    </dd>
-                                    <dd><a class="with-icon"><span class="fa fa-plus"></span>ファイルをアップロード</a></dd>
-                                    <dt>商品説明</dt>
-                                    <dd class="form-group"><textarea class="form-control" placeholder="Enter ..." rows="3"></textarea>
-                                        <div class="accordion"><a class="toggle with-icon"><span class="fa fa-plus icon_plus"></span>一覧コメントを追加</a>
-                                            <div class="accpanel form-group has-error">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-3 col-sm-9 col-lg-offset-2 col-lg-10 ">
+                                    	<a class="with-icon"><svg class="cb cb-plus"> <use xlink:href="#cb-plus" /></svg>ファイルをアップロード</a>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2" for="item_detail">商品説明</label>
+                                    <div class="col-sm-9 col-lg-10">
+                                    	<textarea class="form-control" placeholder="Enter ..." rows="3"></textarea>
+                                        <div class="accordion"><a class="toggle with-icon"><svg class="cb cb-plus icon_plus"> <use xlink:href="#cb-plus" /></svg>一覧コメントを追加</a>
+                                            <div class="accpanel has-error">
                                                 <textarea class="form-control" placeholder="Enter ..." rows="3"></textarea>
                                                 <p class="errormsg text-danger">入力されていません</p>
                                             </div>
                                         </div>
-                                    </dd>
-                                    <dt>販売価格（円）</dt>
-                                    <dd>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2" for="item_price">販売価格（円）</label>
+                                    <div class="col-sm-9 col-lg-10">
                                         <div class="row">
-                                            <div class="col-xs-6 form-group">
+                                            <div class="col-xs-6">
                                                 <input class="form-control" type="text" placeholder="Enter ...">
-                                                <div class="accordion"><a class="toggle with-icon"><span class="fa fa-plus icon_plus"></span>通常価格を追加</a>
+                                                <div class="accordion"><a class="toggle with-icon"><svg class="cb cb-plus icon_plus"> <use xlink:href="#cb-plus" /></svg>通常価格を追加</a>
                                                     <div class="accpanel">
                                                         <input class="form-control" type="text" placeholder="Enter ...">
                                                     </div>
@@ -188,29 +207,36 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </dd>
-                                    <dt>在庫数</dt>
-                                    <dd>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2">在庫数</label>
+                                    <div class="col-sm-9 col-lg-10">
                                         <div class="row">
-                                            <div class="col-xs-12 form-group form-inline">
+                                            <div class="col-xs-12 form-inline">
                                             <input class="form-control" type="text" disabled="disabled" placeholder="Enter ..."> <div class="checkbox"><label> <input type="checkbox">無制限</label></div>
                                             </div>
                                         </div>
-                                    </dd>
-                                    <dt>商品カテゴリ</dt>
-                                    <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
-                                </dl>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-lg-2">商品カテゴリ</label>
+                                    <div class="col-sm-9 col-lg-10">
+                                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                    </div>
+                                </div>
+                            
                             </form>
                         </div><!-- /.box-body --> 
                     </div><!-- /.box -->
                     
                     <div class="box accordion">
                         <div class="box-header toggle">
-                            <h3 class="box-title">詳細な設定<span class="fa fa-chevron-down icon_down"></span></h3>
+                            <h3 class="box-title">詳細な設定<svg class="cb cb-angle-down icon_down"> <use xlink:href="#cb-angle-down" /></svg></h3>
                         </div><!-- /.box-header -->
                         <div class="box-body accpanel">
                             <dl class="dl-horizontal">
-                                <dt>商品コード</dt>
+                                <dt>dl-horizontalのフォームなので参考にしないでください。</dt>
                                 <dd class="form-group"><input class="form-control" type="text" placeholder="Enter ..."></dd>
                                 <dt>販売制限数</dt>
                                 <dd>
@@ -225,9 +251,9 @@
                                 <dd>
                                 <div class="form-inline"><div class="form-group"><input class="form-control" type="text" placeholder="Enter ..."></div><button class="btn btn-default" type="submit">追加</button></div>
                                 <ul class="tag_list">
-                                <li class="alert-dismissible"><button type="button" class="close" aria-label="Close" data-dismiss="alert"><span aria-hidden="true" class="fa fa-times-circle"></span></button>くつろぎグッズ</li>
-                                <li class="alert-dismissible"><button type="button" class="close" aria-label="Close" data-dismiss="alert"><span aria-hidden="true" class="fa fa-times-circle"></span></button>洗濯可</li>
-                                <li class="alert-dismissible"><button type="button" class="close" aria-label="Close" data-dismiss="alert"><span aria-hidden="true" class="fa fa-times-circle"></span></button>コットン100%</li>
+                                <li class="alert-dismissible"><button type="button" class="close" aria-label="Close" data-dismiss="alert"><svg aria-hidden="true" class="cb cb-close"> <use xlink:href="#cb-close" /></svg></button>くつろぎグッズ</li>
+                                <li class="alert-dismissible"><button type="button" class="close" aria-label="Close" data-dismiss="alert"><svg aria-hidden="true" class="cb cb-close"> <use xlink:href="#cb-close" /></svg></button>洗濯可</li>
+                                <li class="alert-dismissible"><button type="button" class="close" aria-label="Close" data-dismiss="alert"><svg aria-hidden="true" class="cb cb-close"> <use xlink:href="#cb-close" /></svg></button>コットン100%</li>
                                 </ul>
 </dd>
                                 <dt>検索ワード<br><span class="small">カンマ区切り</span></dt>
@@ -252,7 +278,7 @@
                     
                     <div class="box accordion">
                         <div class="box-header toggle">
-                            <h3 class="box-title">サブ情報<span class="fa fa-chevron-down icon_down"></span></h3>
+                            <h3 class="box-title">サブ情報<svg class="cb cb-angle-down icon_down"> <use xlink:href="#cb-angle-down" /></svg></h3>
                         </div><!-- /.box-header -->
                         <div class="box-body accpanel">
                             <textarea id="wysiwyg-area" class="form-control" placeholder=""></textarea>
@@ -261,13 +287,13 @@
                     
                     <div class="box accordion">
                         <div class="box-header toggle">
-                            <h3 class="box-title">関連商品<span class="fa fa-chevron-down icon_down"></span></h3>
+                            <h3 class="box-title">関連商品<svg class="cb cb-angle-down icon_down"> <use xlink:href="#cb-angle-down" /></svg></h3>
                         </div><!-- /.box-header -->
                         <div class="box-body accpanel">
                         	<ul class="add_item clearfix">
                             <li><a href="#"><img src="http://www.ec-cube.net/user_data/packages/default/img/banner/top_bnr_design_template2_13_3.jpg"></a></li>
                             <li><a href="#"><img src="http://www.ec-cube.net/user_data/packages/default/img/banner/top_bnr_design_template2_13_3.jpg"></a></li>
-                            <li><a href="#"><span class="fa fa-plus"></span></a></li>
+                            <li><a href="#"><svg class="cb cb-plus"> <use xlink:href="#cb-plus" /></svg></a></li>
                             </ul>
                         </div>
                     </div>
@@ -324,8 +350,8 @@
                         
                         <div class="box no-header">
                             <div class="box-body update-area">
-                            	<p><span class="fa fa-clock-o"></span>登録日：2014/11/29 15:01</p>
-                                <p><span class="fa fa-clock-o"></span>更新日：2014/11/29 15:01</p>
+                            	<p><svg class="cb cb-clock"> <use xlink:href="#cb-clock" /></svg>登録日：2014/11/29 15:01</p>
+                                <p><svg class="cb cb-clock"> <use xlink:href="#cb-clock" /></svg>更新日：2014/11/29 15:01</p>
                             </div>
                         </div><!-- /.box -->
                     </div>

@@ -2,11 +2,30 @@
  * function.js for EC-CUBE admin
  */
 
+jQuery(document).ready(function($){
+	
+/*
+ * for svg icon
+ */
+
+    $(function() {
+        $.ajax({
+          type: 'GET',
+          url: 'assets/img/svg.html',
+          dataType: 'html',
+          success: function(data){
+            $('body').prepend(data);
+            },
+          error: function() {
+            console.log('error');
+          }
+        });
+    });
+
 /*
  * Brake point Check
  */
 
-jQuery(document).ready(function($){
 	
 	$(window).on('load , resize', function(){
 		if(window.innerWidth < 768){		
@@ -28,14 +47,6 @@ jQuery(document).ready(function($){
 		}
 		return false;
 	});
-
-//function fix_scroll() {
-//	var s = $(window).scrollTop();
-//	var fixedcolumn = $('.pc_view #aside_column');
-//	fixedcolumn.css('position','absolute');
-//	fixedcolumn.css('top',s + 'px');
-//}fix_scroll();
-
 
 
 /*
