@@ -710,6 +710,9 @@ fieldset[disabled] .btn-link:focus {
 	min-width: auto;
 	margin-top: -10px;
 }
+.icon_edit .fa {
+	color: #B8BEC4;
+}
 
 .with-icon .fa {
 	margin-right: 5px;
@@ -817,7 +820,9 @@ dd.form-group .errormsg {
 
 .form-inline .radio input[type="radio"], .form-inline .checkbox input[type="checkbox"] {
 	margin-right: 5px;
-	
+}
+.form-inline input + .btn {
+	margin-left: 5px;
 }
 
 .form-control::-moz-placeholder {
@@ -1168,6 +1173,7 @@ dd.form-group .errormsg {
 	padding-top: 1em;
 	padding-bottom: 1em;
 	max-width: 5px;
+	color: #b8bec4;
 }
 .sortable_list .number_sort {
 	white-space: nowrap;
