@@ -1167,6 +1167,7 @@ dd.form-group .errormsg {
 	margin-top: -1.5em;
 	padding-top: 1em;
 	padding-bottom: 1em;
+	max-width: 5px;
 }
 .sortable_list .number_sort {
 	white-space: nowrap;
@@ -1179,6 +1180,13 @@ dd.form-group .errormsg {
 	width: 7em;
 	margin-right: 5px;
 	text-align: right;
+}
+.sortable_list .item_pattern {
+	padding: 16px 2em 16px 16px;
+}
+.sortable_list .item_pattern + .icon_edit {
+	top: 0; right: 0;
+	padding: 16px 8px;
 }
 
 @media (min-width:768px) {
@@ -1225,7 +1233,9 @@ dd.form-group .errormsg {
 		vertical-align: middle;
 		margin-top: 0;
 	}
-
+	.sortable_list .item_pattern {
+		padding: 16px;
+	}
 }
 
 
