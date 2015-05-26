@@ -1,5 +1,24 @@
 $(function(){	
-	
+
+
+	/////////// for svg icon
+
+
+    $(function() {
+        $.ajax({
+          type: 'GET',
+          url: 'img/common/svg.html',
+          dataType: 'html',
+          success: function(data){
+            $('body').prepend(data);
+            },
+          error: function() {
+            console.log('error');
+          }
+        });
+    });
+
+
 	/////////// Drawer menu
 	
 	$('.nav-trigger').on('click', function(event){
