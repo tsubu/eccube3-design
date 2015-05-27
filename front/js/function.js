@@ -111,10 +111,18 @@ $(function(){
 		e.stopPropagation();
 	});
 	
-	/////////// 追従サイドバー
+	
+	/////////// 追従サイドバー + ページトップフェードイン
 		
 	// スクロールした時に以下の処理        
 	$(window).on("scroll", function() {
+		// ページトップフェードイン
+		if ($(this).scrollTop() > 300) {
+			$('.pagetop').fadeIn();
+		} else {
+			$('.pagetop').fadeOut();
+		}
+	
 		//PC表示の時のみに適用
 		if (window.innerWidth > 767){
 			
@@ -180,11 +188,7 @@ this.options)});b._afterUpdate&&b._afterUpdate(a,b._groups)};b._update=function(
 
 // 高さ揃えの要素を指定
 $(function() {
-	$('.item_comment').matchHeight({
-		byRow: true,
-		property: 'height'
-	});
-	$('.item_name').matchHeight({
+	$('.product_item .item_name').matchHeight({
 		byRow: true,
 		property: 'height'
 	});
