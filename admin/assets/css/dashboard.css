@@ -802,6 +802,18 @@ fieldset[disabled] .btn-link:focus {
 	background-color:#EFF2F7;
 }
 
+.pagination .cb-angle-right {
+	position: relative;
+	top: -1px;
+}
+
+.pagination > li:first-child .cb-angle-right {
+	-webkit-transform:rotate(-180deg);
+	-ms-transform:rotate(-180deg);
+	-o-transform:rotate(-180deg);
+	transform:rotate(-180deg)
+}
+
 
 /*	form
 ============================ */
@@ -985,6 +997,12 @@ dd.form-group .errormsg {
 }
 .box-header a.icon_wrap:hover {
 	background: #f2f5f9;
+}
+.box-header .icon_wrap .cb-angle-right {
+	font-size: 19px;
+	font-size: 1.9rem;
+	position: relative;
+	top: -1px;
 }
 .box-title {
 	margin: 0;
