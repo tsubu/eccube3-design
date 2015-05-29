@@ -881,7 +881,10 @@ dd.form-group .errormsg {
 	padding: 16px;
 	text-align: center;
 }
-
+#drag-drop-area .no-image {
+	font-size: 60px;
+	fill:#D0D0D0;
+}
 #wysiwyg-area {
 	height: 200px;
 }
