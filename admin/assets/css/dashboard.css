@@ -2051,51 +2051,6 @@ ul.link-with-bar li:last-child::after {
 	top: 0;
 }
 
-/*	Footer
-============================ */
-
-#footer {
-	/* Force Hardware Acceleration in WebKit */
-	-webkit-transform: translateZ(0);
-	-moz-transform: translateZ(0);
-	-ms-transform: translateZ(0);
-	-o-transform: translateZ(0);
-	transform: translateZ(0);
-	will-change: transform;
-	
-	-webkit-transition:-webkit-transform .3s ease;
-	-moz-transition:-moz-transform .3s ease;
-	-o-transition:-o-transform .3s ease;
-	transition:transform .3s ease;
-	-webkit-transition:margin-left .3s ease;
-	-o-transition:margin-left .3s ease;
-	transition:margin-left .3s ease;
-	margin-left:230px;
-	z-index:820;
-	padding: 0;
-	margin-top: 40px;
-	
-	background:#fff;
-	padding:15px;
-	color:#444;
-	text-align: right;
-}
-
-
-
-@media (max-width:767px) {
-	#footer {
-		margin-left: 0;
-	}
-}
-@media (min-width: 768px) {
-	#footer {
-		margin-left: 0;
-	}
-}
-.sidebar-open #footer {
-	margin-left: 230px;
-}
 
 
 /*	LOGIN PAGE
