@@ -1890,6 +1890,7 @@ dl.accordion {
 	text-align: center;
 	outline: none;
 	color: #BFBFBF;
+	z-index: 1;
 }
 
 @media (min-width: 768px) {
@@ -1916,7 +1917,7 @@ dl.accordion {
 	padding: 32px 0 16px;
 	position: relative;
 	top: -1px;
-	z-index: -1;
+	z-index: 0;
 }
 .search-box .search-box-inner .row {
 	margin: 0;
