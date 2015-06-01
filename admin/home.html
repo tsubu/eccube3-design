@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="favicon.ico">
+<title>EC-CUBE管理画面</title>
+
+<!-- Bootstrap core CSS -->
+<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="assets/css/dashboard.css" rel="stylesheet">
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-target="#scrollspy" data-spy="scroll">
+<div id="wrapper"> 
+    <!-- ▼ #header ▼ -->
+    <header id="header" role="navigation">
+        <div class="navbar navbar-static-top">
+            <div class="logo" href="./"><img src="assets/img/logo.png" width="172"></div>
+            <!-- Sidebar toggle button-->
+            <div class="bt_toggle"> <a role="button" data-toggle="offcanvas" class="bt_drawermenu" href="#"> <span class="sr-only">Toggle navigation</span> <svg class="cb cb-bars"> <use xlink:href="#cb-bars" /></svg></a> </div>
+            <a href="#" id="sitename">EC-CUBE STORE ミンナデイッショニイーシーキューブ<svg class="cb cb-external-link"> <use xlink:href="#cb-external-link" /></svg></a> 
+            <!-- Navbar Right Menu -->
+            <div class="navbar-menu">
+                <dl class="dropdown">
+                    <dt class="dropdown-toggle" data-toggle="dropdown"><svg class="cb cb-user-circle"> <use xlink:href="#cb-user-circle" /></svg> <span class="hidden-xs">管理者 様</span><svg class="cb cb-angle-down icon_down"> <use xlink:href="#cb-angle-down"></svg></dt>
+                    <dd class="dropdown-menu">最終ログイン<br>
+                    2014/11/29 15:01 <a class="btn btn-info btn-xs" href="#">ログアウト</a> </dd>
+                </dl>
+            </div>
+        </div>
+    </header>
+    <!-- ▲ #header ▲ --> 
+    <!-- ▼ #side ▼ -->
+    <aside id="side">
+        <ul class="nav nav-sidebar">
+            <li><a href="./" class="active"><svg class="cb cb-home"> <use xlink:href="#cb-home" /></svg>ホーム<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a></li>
+            <li><a class="toggle"><svg class="cb cb-tag"> <use xlink:href="#cb-tag" /></svg>商品管理<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
+                <ul>
+                    <li><a href="item.html">商品登録1</a></li>
+                    <li><a href="item_confirm.html">商品登録2</a></li>
+                    <li><a href="itemmaster.html">商品マスター</a></li>
+                    <li><a href="item_sort.html">商品並び替え</a></li>
+                    <li><a href="item_pattern.html">規格管理</a></li>
+                </ul>
+            </li>
+            <li><a class="toggle"><svg class="cb cb-shopping-cart"> <use xlink:href="#cb-shopping-cart" /></svg>受注管理<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
+                <ul>
+                    <li><a href="order.html">受注登録</a></li>
+                    <li><a href="#">(仮)デザイン設定</a></li>
+                    <li><a href="#">(仮)システム設定</a></li>
+                    <li><a href="#">(仮)機能拡張</a></li>
+                    <li><a href="#">(仮)環境情報</a></li>
+                </ul>
+            </li>
+            <li><a class="toggle"><svg class="cb cb-chart"> <use xlink:href="#cb-chart" /></svg>売上管理<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
+                <ul>
+                    <li><a href="#">(仮)基本情報設定</a></li>
+                    <li><a href="#">(仮)デザイン設定</a></li>
+                    <li><a href="#">(仮)システム設定</a></li>
+                    <li><a href="#">(仮)機能拡張</a></li>
+                    <li><a href="#">(仮)環境情報</a></li>
+                </ul>
+            </li>
+            <li><a class="toggle"><svg class="cb cb-users"> <use xlink:href="#cb-users" /></svg>会員管理<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
+                <ul>
+                    <li><a href="membermaster.html">会員マスター</a></li>
+                    <li><a href="member_regist.html">会員登録</a></li>
+                    <li><a href="#">(仮)システム設定</a></li>
+                    <li><a href="#">(仮)機能拡張</a></li>
+                    <li><a href="#">(仮)環境情報</a></li>
+                </ul>
+            </li>
+            <li><a class="toggle"><svg class="cb cb-file-text"> <use xlink:href="#cb-file-text" /></svg>コンテンツ管理<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
+                <ul>
+                    <li><a href="contents_recommend.html">おすすめ商品管理</a></li>
+                    <li><a href="#">(仮)デザイン設定</a></li>
+                    <li><a href="#">(仮)システム設定</a></li>
+                    <li><a href="#">(仮)機能拡張</a></li>
+                    <li><a href="#">(仮)環境情報</a></li>
+                </ul>
+            </li>
+            <li><a class="toggle"><svg class="cb cb-cog"> <use xlink:href="#cb-cog" /></svg>設定<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
+                <ul>
+                    <li><a class="toggle">基本情報設定<svg class="cb cb-angle-down"> <use xlink:href="#cb-angle-down" /></svg></a>
+                        <ul>
+                            <li><a href="#">(仮)基本情報設定</a></li>
+                            <li><a href="#">(仮)デザイン設定</a></li>
+                            <li><a href="#">(仮)システム設定</a></li>
+                            <li><a href="#">(仮)機能拡張</a></li>
+                            <li><a href="#">(仮)環境情報</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">(仮)デザイン設定</a></li>
+                    <li><a href="#">(仮)システム設定</a></li>
+                    <li><a href="#">(仮)機能拡張</a></li>
+                    <li><a href="#">(仮)環境情報</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+    <!-- ▲ #side ▲ --> 
+    <!-- ▼ #main ▼ -->
+    <div id="main">
+        <h1 class="page-header">ホーム<span></span></h1>
+        <div class="container-fluid">
+        
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box" id="order_info">
+                        <div class="box-header">
+                            <h3 class="box-title">受注状況<a href="#" class="icon_wrap"><svg class="cb cb-angle-right"> <use xlink:href="#cb-angle-right" /></svg></a></h3>
+                        </div><!-- /.box-header -->
+                        <div class="box-body no-padding no-border">
+                            <div class="link_list">
+                                <div class="tableish">
+                                    <a href="#" class="item_box tr">
+                                        <div class="td">新規受付</div>
+                                        <div class="item_number text-right td">12</div>
+                                        <div class="icon_link td">
+                                            <svg class="cb cb-angle-right"> <use xlink:href="#cb-angle-right" /></svg>
+                                        </div>
+                                    </a><!-- /.item_box --> 
+                                    <a href="#" class="item_box tr">
+                                        <div class="td">入金待ち</div>
+                                        <div class="item_number text-right td">5</div>
+                                        <div class="icon_link td">
+                                            <svg class="cb cb-angle-right"> <use xlink:href="#cb-angle-right" /></svg>
+                                        </div>
+                                    </a><!-- /.item_box --> 
+                                    <a href="#" class="item_box tr">
+                                        <div class="td">入金済み</div>
+                                        <div class="item_number text-right td">4</div>
+                                        <div class="icon_link td">
+                                            <svg class="cb cb-angle-right"> <use xlink:href="#cb-angle-right" /></svg>
+                                        </div>
+                                    </a><!-- /.item_box --> 
+                                    <a href="#" class="item_box tr">
+                                        <div class="td">決済処理中</div>
+                                        <div class="item_number text-right td">12</div>
+                                        <div class="icon_link td">
+                                            <svg class="cb cb-angle-right"> <use xlink:href="#cb-angle-right" /></svg>
+                                        </div>
+                                    </a><!-- /.item_box --> 
+                                    <a href="#" class="item_box tr">
+                                        <div class="td">取り寄せ中</div>
+                                        <div class="item_number text-right td">2</div>
+                                        <div class="icon_link td">
+                                            <svg class="cb cb-angle-right"> <use xlink:href="#cb-angle-right" /></svg>
+                                        </div>
+                                    </a><!-- /.item_box --> 
+                                </div>
+                            </div>
+                        </div><!-- /.box-body --> 
+                    </div><!-- /.box --> 
+                </div><!-- /.col -->
+                
+                <div class="col-md-6">
+                    <div class="box" id="cube_news">
+                        <div class="box-header">
+                            <h3 class="box-title">お知らせ<a href="#" class="icon_wrap"><svg class="cb cb-angle-right"> <use xlink:href="#cb-angle-right" /></svg></a></h3>
+                        </div><!-- /.box-header -->
+                        <div class="box-body no-padding no-border">
+                        	<div class="link_list_wrap">
+                                <div class="link_list">
+                                    <div class="tableish">
+                                        <a href="#" class="item_box tr">
+                                        <div class="item_news td"><img src="assets/img/logo2.png" alt="">
+                                            <strong>2014/11/29</strong>
+                                            <p>EC-CUBEユーザーカンファレンスを2015年1月22日、銀座で開催!</p></div>
+                                            <div class="icon_link td">
+                                                <svg class="cb cb-angle-right"> <use xlink:href="#cb-angle-right" /></svg>
+                                            </div>
+                                        </a><!-- /.item_box --> 
+                                        <a href="#" class="item_box tr">
+                                            <div class="item_news td">
+                                            <strong>2014/11/29</strong><br>
+                                            <p>BtoB向けECサイト構築パッケージ「EC-CUBE B2B」を提供開始いたしました。</p></div>
+                                            <div class="icon_link td">
+                                                <svg class="cb cb-angle-right"> <use xlink:href="#cb-angle-right" /></svg>
+                                            </div>
+                                        </a><!-- /.item_box --> 
+                                        <a href="#" class="item_box tr">
+                                            <div class="item_news td">
+                                            <strong>先着50名様限定！</strong><br>
+                                            <p>Paypal（ペイパル）モジュール導入で5,000円キャッシュバック！</p></div>
+                                            <div class="icon_link td">
+                                                <svg class="cb cb-angle-right"> <use xlink:href="#cb-angle-right" /></svg>
+                                            </div>
+                                        </a><!-- /.item_box --> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body --> 
+
+                    </div><!-- /.box --> 
+                </div><!-- /.col --> 
+            </div>
+            
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="box" id="sale_info">
+                        <div class="box-header">
+                            <h3 class="box-title">売り上げ状況</h3>
+                        </div><!-- /.box-header -->
+                        <div class="box-body no-padding no-border">
+                            <div class="sale_box clearfix">
+                            	<div class="monthly_sale">
+                                	<div class="item_number">
+                                    	\ 61,857,185 / 894 <span>件</span>
+                                        <div class="small">今月の売上高 / 売上件数</div>
+                                    </div>
+                                </div>
+                            	<div class="yesterday_sale">
+                                	<div class="item_number">
+                                        \ 857,185 / 102 <span>件</span>
+                                        <div class="small">昨日の売上高 / 売上件数</div>
+                                    </div>
+                                </div>
+                            	<div class="today_sale">
+                                	<div class="item_number">
+                                        \ 857,185 / 102 <span>件</span>
+                                        <div class="small">今日の売上高 / 売上件数</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body --> 
+                    </div><!-- /.box --> 
+                </div><!-- /.col --> 
+                <div class="col-md-4">
+                    <div class="box" id="shop_info">
+                        <div class="box-header">
+                            <h3 class="box-title">ショップ状況</h3>
+                        </div><!-- /.box-header -->
+                        <div class="box-body no-padding no-border">
+                            <div class="link_list">
+                                <div class="tableish">
+                                    <a href="#" class="item_box tr">
+                                        <div class="icon td"><svg class="cb cb-tag-slash"><use xlink:href="#cb-tag-slash" /></svg></div>
+                                        <div class="item_number td">22<div class="small">在庫切れ商品</div></div>
+                                        <div class="icon_link td">
+                                            <svg class="cb cb-angle-right"> <use xlink:href="#cb-angle-right" /></svg>
+                                        </div>
+                                    </a><!-- /.item_box --> 
+                                    <a href="#" class="item_box tr">
+                                        <div class="icon td"><svg class="cb cb-users"><use xlink:href="#cb-users" /></svg></div>
+                                        <div class="item_number text-left td">22<div class="small">会員数</div></div>
+                                        <div class="icon_link td">
+                                            <svg class="cb cb-angle-right"> <use xlink:href="#cb-angle-right" /></svg>
+                                        </div>
+                                    </a><!-- /.item_box --> 
+                                </div>
+                            </div>
+                        </div><!-- /.box-body --> 
+                    </div><!-- /.box --> 
+                </div><!-- /.col --> 
+            </div>
+
+        </div>
+    </div>
+    <!-- ▲ #main ▲ --> 
+        
+</div>
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script src="dist/js/bootstrap.min.js"></script> 
+<script src="assets/js/function.js"></script>
+</body>
+</html>
