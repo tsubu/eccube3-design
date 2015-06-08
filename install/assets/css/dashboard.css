@@ -936,6 +936,16 @@ textarea.disp_area {
 	line-height: 64px;
 	padding: 0 15px;
 }
+#header .navbar .logo .cb-logomark {
+	font-size: 30px;
+}
+#header .navbar .logo .cb-logotext {
+	font-size: 140px;
+	fill: #fff;
+	height: 64px;
+	line-height: 64px;
+	margin-left: 2px;
+}
 
 
 
