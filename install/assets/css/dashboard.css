@@ -959,6 +959,10 @@ textarea.disp_area {
 
 .main_inner {
     margin-left: 336px;
+}
+    
+.main_content {
+    margin: 0 auto;
 	max-width: 864px;
 	min-width: 500px;
 }

@@ -52,118 +52,120 @@
     <!-- ▲ #side ▲ --> 
     <!-- ▼ #main ▼ -->
     <div id="main" class="step4">
-        <div class="main_inner">
-            <div class="page-header">
-                <h1>サイトの設定</h1>
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                        <form name="form1" id="form1" method="post" action="?">
-                            <div class="form-group">
-                                <label for="shop_name">あなたの店名<span class="required">*</span></label>
-                                <input class="form-control" type="text" id="shop_name">
-                            </div>
-                            <div class="form-group">
-                                <label for="admin_mail">メールアドレス（受注メールなどの宛先になります）<span class="required">*</span></label>
-                                <input class="form-control" type="text" id="admin_mail">
-                            </div>
-                            <div class="form-group">
-                                <label for="login_id">管理画面ログインID（半角英数字4～50文字）<span class="required">*</span></label>
-                                <input class="form-control" type="text" id="login_id">
-                            </div>
-                            <div class="form-group">
-                                <label for="password">管理画面パスワード（半角英数字4～50文字）<span class="required">*</span></label>
-                                <input class="form-control" type="password" id="password">
-                            </div>
-                            
-                            <h2>URLの設定</h2>
-                            <div class="form-group">
-                                <label for="normal_url">お店のURL（通常）<span class="required">*</span></label>
-                                <input class="form-control" type="text" id="normal_url" placeholder="http://site.ec-cube.net/">
-                            </div>
-                            <div class="form-group">
-                                <label for="secure_url">お店のURL（セキュア）<span class="required">*</span><br>
-                                <span class="small">個人情報入力フォームなどを、SSL（https）で表示する場合</span></label>
-                                <input class="form-control" type="text" id="secure_url" placeholder="https://site.ec-cube.net/">
-                            </div>
-                            <div class="form-group">
-                                <label for="domain">共通ドメインの登録<br>
-                                <span class="small">通常URLとセキュアURLでサブドメインが異なる場合、共通しているドメイン部分を入力</span></label>
-                                <input class="form-control" type="text" id="domain">
-                            </div>
-                            <div class="form-group">
-                                <label for="admin_dir">管理画面のURL（半角英数字4～50文字）<span class="required">*</span></label>
-                                <div class="form-inline">
-                                    <span class="small">http://[ホスト名].[ドメイン名]/[ショップ名]/</span><input class="form-control" type="text" id="admin_dir">
+    	<div class="main_inner">
+        	<div class="main_content">
+                <div class="page-header">
+                    <h1>サイトの設定</h1>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <form name="form1" id="form1" method="post" action="?">
+                                <div class="form-group">
+                                    <label for="shop_name">あなたの店名<span class="required">*</span></label>
+                                    <input class="form-control" type="text" id="shop_name">
                                 </div>
-                            </div>
-                            
-                            <h2>セキュリティの設定</h2>
-    
-                            <div class="form-group">
-                                <label>管理画面へのアクセスを、SSL（https）経由に制限します</label>
-                                <div class="checkbox">
-                                    <label><input type="checkbox">制限する</label>
+                                <div class="form-group">
+                                    <label for="admin_mail">メールアドレス（受注メールなどの宛先になります）<span class="required">*</span></label>
+                                    <input class="form-control" type="text" id="admin_mail">
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label>管理画面へのアクセスを、以下のIPに制限します<br>
-                                <span class="small">複数入力する場合は、IPとIPの間に改行をいれてください</span></label>
-                                <textarea class="form-control" name=""></textarea>
-                            </div>
-                            
-                            <div class="accordion">
-                                <a href="#" class="toggle">&gt; オプションを表示</a>
-                                <div class="accpanel">
-                                    <div class="form-group">
-                                        <label>メーラーバックエンド<span class="required">*</span></label>
-                                        <div class="radio">
-                                          <label>
-                                            <input type="radio" name="mailer" id="mail" value="mail" checked>mail（PHPの組み込み関数 mail() を使用してメールを送信）
-                                          </label>
+                                <div class="form-group">
+                                    <label for="login_id">管理画面ログインID（半角英数字4～50文字）<span class="required">*</span></label>
+                                    <input class="form-control" type="text" id="login_id">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">管理画面パスワード（半角英数字4～50文字）<span class="required">*</span></label>
+                                    <input class="form-control" type="password" id="password">
+                                </div>
+                                
+                                <h2>URLの設定</h2>
+                                <div class="form-group">
+                                    <label for="normal_url">お店のURL（通常）<span class="required">*</span></label>
+                                    <input class="form-control" type="text" id="normal_url" placeholder="http://site.ec-cube.net/">
+                                </div>
+                                <div class="form-group">
+                                    <label for="secure_url">お店のURL（セキュア）<span class="required">*</span><br>
+                                    <span class="small">個人情報入力フォームなどを、SSL（https）で表示する場合</span></label>
+                                    <input class="form-control" type="text" id="secure_url" placeholder="https://site.ec-cube.net/">
+                                </div>
+                                <div class="form-group">
+                                    <label for="domain">共通ドメインの登録<br>
+                                    <span class="small">通常URLとセキュアURLでサブドメインが異なる場合、共通しているドメイン部分を入力</span></label>
+                                    <input class="form-control" type="text" id="domain">
+                                </div>
+                                <div class="form-group">
+                                    <label for="admin_dir">管理画面のURL（半角英数字4～50文字）<span class="required">*</span></label>
+                                    <div class="form-inline">
+                                        <span class="small">http://[ホスト名].[ドメイン名]/[ショップ名]/</span><input class="form-control" type="text" id="admin_dir">
+                                    </div>
+                                </div>
+                                
+                                <h2>セキュリティの設定</h2>
+        
+                                <div class="form-group">
+                                    <label>管理画面へのアクセスを、SSL（https）経由に制限します</label>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox">制限する</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>管理画面へのアクセスを、以下のIPに制限します<br>
+                                    <span class="small">複数入力する場合は、IPとIPの間に改行をいれてください</span></label>
+                                    <textarea class="form-control" name=""></textarea>
+                                </div>
+                                
+                                <div class="accordion">
+                                    <a href="#" class="toggle">&gt; オプションを表示</a>
+                                    <div class="accpanel">
+                                        <div class="form-group">
+                                            <label>メーラーバックエンド<span class="required">*</span></label>
+                                            <div class="radio">
+                                              <label>
+                                                <input type="radio" name="mailer" id="mail" value="mail" checked>mail（PHPの組み込み関数 mail() を使用してメールを送信）
+                                              </label>
+                                            </div>
+                                            <div class="radio">
+                                              <label>
+                                                <input type="radio" name="mailer" id="smtp" value="smtp">SMTP（SMTPサーバに直接接続してメールを送信）
+                                              </label>
+                                            </div>
+                                            <div class="radio">
+                                              <label>
+                                                <input type="radio" name="mailer" id="sendmail" value="sendmail">sendmail（sandmailプログラムによりメールを送信）
+                                              </label>
+                                            </div>                                
                                         </div>
-                                        <div class="radio">
-                                          <label>
-                                            <input type="radio" name="mailer" id="smtp" value="smtp">SMTP（SMTPサーバに直接接続してメールを送信）
-                                          </label>
+                                        <div class="form-group">
+                                            <label for="smtp_host">SMTPホスト<br>
+                                            <span class="small">メーラーバックエンドがSMTPの場合のみ指定</span></label>
+                                            <input class="form-control" type="text" id="smtp_host">
                                         </div>
-                                        <div class="radio">
-                                          <label>
-                                            <input type="radio" name="mailer" id="sendmail" value="sendmail">sendmail（sandmailプログラムによりメールを送信）
-                                          </label>
-                                        </div>                                
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="smtp_host">SMTPホスト<br>
-                                        <span class="small">メーラーバックエンドがSMTPの場合のみ指定</span></label>
-                                        <input class="form-control" type="text" id="smtp_host">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="smtp_port">SMTPポート<br>
-                                        <span class="small">メーラーバックエンドがSMTPの場合のみ指定</span></label>
-                                        <input class="form-control" type="text" id="smtp_port">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="smtp_user">SMTPユーザー<br>
-                                        <span class="small">メーラーバックエンドがSMTPかつSMTP-AUTH使用時のみ指定</span></label>
-                                        <input class="form-control" type="text" id="smtp_user">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="smtp_password">SMTPパスワード<br>
-                                        <span class="small">メーラーバックエンドがSMTPかつSMTP-AUTH使用時のみ指定</span></label>
-                                        <input class="form-control" type="text" id="smtp_password">
+                                        <div class="form-group">
+                                            <label for="smtp_port">SMTPポート<br>
+                                            <span class="small">メーラーバックエンドがSMTPの場合のみ指定</span></label>
+                                            <input class="form-control" type="text" id="smtp_port">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="smtp_user">SMTPユーザー<br>
+                                            <span class="small">メーラーバックエンドがSMTPかつSMTP-AUTH使用時のみ指定</span></label>
+                                            <input class="form-control" type="text" id="smtp_user">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="smtp_password">SMTPパスワード<br>
+                                            <span class="small">メーラーバックエンドがSMTPかつSMTP-AUTH使用時のみ指定</span></label>
+                                            <input class="form-control" type="text" id="smtp_password">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-    
-                            <ul class="btn_area">
-                                <li><a href="#" class="btn btn-primary btn-block btn-lg">次へ進む</a></li>
-                                <li><a href="#" class="btn btn-link btn-block btn-lg">前に戻る</a></li>
-                            </ul>
-                        </form>
+        
+                                <ul class="btn_area">
+                                    <li><a href="#" class="btn btn-primary btn-block btn-lg">次へ進む</a></li>
+                                    <li><a href="#" class="btn btn-link btn-block btn-lg">前に戻る</a></li>
+                                </ul>
+                            </form>
+                        </div>
+                        <!-- /.col --> 
                     </div>
-                    <!-- /.col --> 
                 </div>
             </div>
         </div>
