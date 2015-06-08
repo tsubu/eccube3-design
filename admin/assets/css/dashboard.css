@@ -2167,16 +2167,22 @@ ul.link-with-bar li:last-child::after {
 
 /* form layout */
 
-.form-group.lange input[type="text"],
-.form-group.lange label {
+.form-group.range .form-control,
+.form-group.range label {
 	display: inline-block;
 	vertical-align: middle;
 	margin-bottom: 0;
 	margin-left: 1%;
 	margin-right: 1%;
 }
-.form-group.lange input[type="text"] {
+.form-group.range .form-control {
 	width: 28%;
+}
+.form-group.range input.input_cal.form-control {
+	width: 43%;
+}
+.form-group.range input.input_cal.form-control:first-child {
+	margin-left: 0;
 }
 
 .input_tel input {
