@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>エラー - EC-CUBE SHOP - EC-CUBE管理画面</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ▼ 表示確認用＠静的ページ ▼ --> 
+<link rel="icon" href="assets/img/favicon.ico">
+<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/dashboard.css">
+<!-- ▲ 表示確認用＠静的ページ ▲ --> 
+
+<!-- ▼ 本番用 ▼
+
+<link rel="icon" href="/ec-cube/html/template/admin/assets/img/favicon.ico">
+<link rel="stylesheet" href="/ec-cube/html/template/admin/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="/ec-cube/html/template/admin/assets/css/dashboard.css">
+
+--> 
+
+
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+<div id="wrapper"> 
+    <!-- ▼ #main ▼ -->
+    <div id="main">
+        <div class="container-fluid"> 
+            <div class="message_box">
+                <div class="row no-padding">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <div class="icon"><svg class="cb cb-warning"><use xlink:href="#cb-warning" /></svg></div>
+                        <h1>エラーが発生しました</h1>
+                        <p>えらーえらーえらーえらーですえらーえらーえらーえらーですえらーえらーえらーえらーですえらーえらーえらーえらーですえらーえらーえらーえらーです</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="btn_group col-sm-offset-4 col-sm-4">
+                        <p><button type="button" class="btn btn-info btn-block">トップページへ</button></p>
+                        <p><button type="button" class="btn btn-info btn-block">前のページに戻る</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ▲ #main ▲ --> 
+    
+    <!-- ▼ #modal ▼ --> 
+    <!-- ▲ #modal ▲ --> 
+    
+</div>
+
+<!-- ▼ 表示確認用＠静的ページ ▼ --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/ec-cube/html/template/admin/assets/js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+<script>
+$(function () {
+    $.ajax({
+        url: 'assets/img/svg.html',
+        type: 'GET',
+        dataType: 'html',
+    }).done(function(data){
+        $('body').prepend(data);
+    }).fail(function(data){
+    });
+});
+</script>
+<!-- ▲ 表示確認用＠静的ページ ▲ --> 
+
+
+<!-- ▼ 本番用 ▼
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/ec-cube/html/template/admin/assets/js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+<script src="/ec-cube/html/template/admin/assets/js/function.js"></script>
+<script>
+$(function () {
+    $.ajax({
+        url: '/ec-cube/html/template/admin/assets/img/svg.html',
+        type: 'GET',
+        dataType: 'html',
+    }).done(function(data){
+        $('body').prepend(data);
+    }).fail(function(data){
+    });
+});
+</script>
+
+ --> 
+
+
+</body>
+</html>

@@ -858,7 +858,7 @@ p.message {
 .header_logo_area {
 	position: relative;
 	z-index: 10;
-	min-height: 36px;
+	min-height: 50px;
 }
 .header_logo_area .header_logo {
 	font-size: 20px;
@@ -2013,6 +2013,33 @@ div.table .tbody .addr_box .column {
 	margin: 0 0 16px;
 }
 
+
+/* Error Page */
+
+.message_box {
+	text-align: center;
+	padding-bottom: 50px;
+}
+.message_box .icon {
+	font-size: 100px;
+	font-size: 10rem;
+	color: #ccc;
+}
+.message_box h1 {
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin: 0 0 16px;
+}
+.message_box .btn_group {
+	margin-top: 30px;
+}
+.error_page #contents {
+	background: inherit;
+	
+}
+
+
+
 /****** Effect Setting ********/
 
 /* Overlay */
@@ -3077,6 +3104,8 @@ fieldset[disabled] .btn-link:focus {
 }
 
 
+
+
 /******************************
 	Media Query
 *******************************/
@@ -3390,29 +3419,29 @@ fieldset[disabled] .btn-link:focus {
 	}
 	
 	
-	#side1 {
+	#side_left {
 		float: left;
 		width: 25%;
 		padding-right: 16px;
 	}
-	#side2 {
+	#side_right {
 		float: right;
 		width: 25%;
 		padding-left: 16px;
 	}
 	
-	/* -- main_left (side2 only) -- */
+	/* -- main_left (side_right only) -- */
 	
 	/* main */
-	.main_left #main {
+	.theme_side_right #main {
 		width: 75%;
 		float: left;
 	}
 
-	/* -- main_right (side1 only) -- */
+	/* -- main_right (side_left only) -- */
 
 	/* main */
-	.main_right #main {
+	.theme_side_left #main {
 		width: 75%;
 		float: right;
 	}
@@ -3420,15 +3449,15 @@ fieldset[disabled] .btn-link:focus {
 	/* -- main_only -- */
 	
 	/* main */
-	.main_only #main {
+	.theme_main_only #main {
 		width: 100%;
 	}
 
 
-	/* -- main_left_right (side1 & 2) -- */
+	/* -- main_left_right (side_left & side_right) -- */
 	
 	/* main */
-	.main_left_right #main {
+	.theme_side_both #main {
 		width: 50%;
 		float: left;
 	}
@@ -4035,6 +4064,10 @@ fieldset[disabled] .btn-link:focus {
 		font-size: 24px;
 		font-size: 2.4rem;
 	}
+	.message_box h1 {
+		font-size: 24px;
+		font-size: 2.4rem;
+	}
 
 	/****** Footer Setting ********/
 	
@@ -4267,5 +4300,11 @@ fieldset[disabled] .btn-link:focus {
 		margin-bottom: 16px;
 	}
 
+	/* Error Page */
+	
+	.error_page .footer_logo_area {
+		margin-top: 0;
+		
+	}
 
 }

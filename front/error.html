@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>EC-CUBE SHOP / エラー</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ▼ 表示確認用＠静的ページ。本番用にパスを適宜変えていただけますようお願いいたします。 ▼ --> 
+<link rel="icon" href="img/common/favicon.ico">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/default.css"><!-- for original theme CSS -->
+<!-- ▲ 表示確認用＠静的ページ。本番用にパスを適宜変えていただけますようお願いいたします。 ▲ --> 
+
+</head>
+<body>
+<div id="wrapper" class="error_page">
+<div id="contents" class="theme_main_only">
+    <div class="container-fluid inner">
+        <div id="main">
+            <div class="container-fluid">
+                <div class="message_box">
+                    <div class="row no-padding">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <div class="icon"><svg class="cb cb-warning"><use xlink:href="#cb-warning" /></svg></div>
+                            <h1>エラーが発生しました</h1>
+                            <p>えらーえらーえらーえらーですえらーえらーえらーえらーですえらーえらーえらーえらーですえらーえらーえらーえらーですえらーえらーえらーえらーです</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="btn_group col-sm-offset-4 col-sm-4">
+                            <p><button type="button" class="btn btn-info btn-block">トップページへ</button></p>
+                            <p><button type="button" class="btn btn-info btn-block">前のページに戻る</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ▼ 表示確認用＠静的ページ。本番用にパスを適宜変えていただけますようお願いいたします。 ▼ --> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script> 
+<script src="js/function.js"></script> 
+<script>
+$(function () {
+    $.ajax({
+        url: 'img/common/svg.html',
+        type: 'GET',
+        dataType: 'html',
+    }).done(function(data){
+        $('body').prepend(data);
+    }).fail(function(data){
+    });
+});
+</script>
+
+<!-- ▲ 表示確認用＠静的ページ。本番用にパスを適宜変えていただけますようお願いいたします。 ▲ --> 
